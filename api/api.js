@@ -3,6 +3,7 @@ const cors = require('cors');
 const bodyParser = require('body-parser');
 const _ = require('lodash');
 const { v4: uuidv4 } = require('uuid');
+const helmet = require('helmet');
 
 const app = express();
 const port = 3001;
@@ -10,6 +11,17 @@ const port = 3001;
 // Middleware
 app.use(cors());
 app.use(bodyParser.json());
+app.use(helmet({
+    permissionsPolicy: {
+      directives: {
+        "run-ad-auction": [],
+        "private-state-token-redemption": [],
+        "private-state-token-issuance": [],
+        "join-ad-interest-group": [],
+        "browsing-topics": []
+      },
+    },
+  }));
 
 // Sample data
 const db = require('./db');

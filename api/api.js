@@ -33,6 +33,7 @@ app.get('/list', async (req, res) => {
 app.post('/list/item', async (req, res, next) => {
     const item = {
         id: uuidv4(),
+        status: 'open',
         ...req.body 
     };
 
@@ -74,7 +75,6 @@ app.delete('/list/delete-completed-items', async (req, res, next) => {
 });
 
 app.post('/list/show-completed-items/:show', async (req, res, next) => {
-    // TODOv4: Validate schema
     db.list.showCompletedItems = req.params.show;
     
     return res.json({ success: true });

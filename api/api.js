@@ -23,9 +23,9 @@ const menu = [
 ];
 
 const list = [
-  'Item 1',
-  'Item 2',
-  'Item 3'
+  { id: 1, name: 'Item 1', notes: 'Schallo', status: 'open' },
+  { id: 2, name: 'Item 2', notes: 'Schallo', status: 'open' },
+  { id: 3, name: 'Item 3', notes: 'Schallo', status: 'open' }
 ];
 
 // Routes

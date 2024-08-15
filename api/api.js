@@ -46,7 +46,7 @@ app.post('/list/item/:id/open', async (req, res, next) => {
     return res.json(db.list);
 });
 
-app.post('/', async (req, res, next) => {
+app.post('/menu', async (req, res, next) => {
     const { ingredients } = req.body;
 
     // Build ingredient list

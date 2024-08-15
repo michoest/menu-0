@@ -17,11 +17,15 @@ const users = [
 ];
 
 const menu = [
-  { id: 1, title: 'Pizza', standardAmount: 10, ingredients: ['Teig', 'Maten'] },
-  { id: 2, title: 'Burger', standardAmount: 8, ingredients: ['Rot', 'Leisch'] },
-  { id: 3, title: 'Salad', standardAmount: 6, ingredients: ['Lat', 'Maten', 'Ke'] },
-  { id: 4, title: 'Waktoffels', standardAmount: 4, ingredients: ['Toffels', 'Wak'] },
-  { id: 5, title: 'Sagne', standardAmount: 2, ingredients: ['Dels', 'Sauce'] }
+  { id: 1, title: 'Waktoffels', standardAmount: 4, ingredients: [
+    { name: 'Toffels', amount: { value: 1, unit: 'kg' } }, 
+    { name: 'Wak', amount: { value: 250, unit: 'g' } }
+    ] 
+},
+  { id: 2, title: 'Sagne', standardAmount: 2, ingredients: [
+    { name: 'Dels', amount: { value: 12, unit: 'Latten' } }, 
+    { name: 'Sauce', amount: { value: null, unit: 'viel' } }
+] }
 ];
 
 const list = [

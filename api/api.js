@@ -23,9 +23,9 @@ const menu = [
 ];
 
 const list = [
-  { id: 1, name: 'Item 1', notes: 'Schallo', status: 'open' },
-  { id: 2, name: 'Item 2', notes: 'Schallo', status: 'open' },
-  { id: 3, name: 'Item 3', notes: 'Schallo', status: 'open' }
+  { id: 1, category: 'We', name: 'Eis in Röße M', notes: '6 Tück', status: 'open', due: '2024-08-16' },
+  { id: 2, category: 'We', name: 'Lopier', notes: '', status: 'open' },
+  { id: 3, category: 'Markt', name: 'Toffels', notes: '2,5 kg', status: 'open' }
 ];
 
 // Routes

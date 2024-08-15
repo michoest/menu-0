@@ -1,1 +1,0 @@
-import{Q as e}from"./QPage.78403980.js";import{H as t,I as a,J as s,Z as r}from"./index.047a1eb8.js";const p=Object.assign({name:"SettingsPage"},{__name:"settings.page",setup(c){return(n,o)=>(t(),a(e,{class:"flex flex-center"},{default:s(()=>[r(" Settings ")]),_:1}))}});export{p as default};

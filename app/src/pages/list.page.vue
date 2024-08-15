@@ -15,16 +15,16 @@
               <q-item-section>
                 <q-item-label>
                   {{ item.name }}
-                  <q-badge v-if="item.due?.date" class="q-mx-sm" color="accent">{{ dayjs(item.due.date).format('YYYY-MM-DD') }}</q-badge>
+                  <q-badge v-if="item.due" class="q-mx-sm" color="accent">{{ dayjs(item.due).format('YYYY-MM-DD') }}</q-badge>
                 </q-item-label>
                 <q-item-label caption>{{ item.notes }}</q-item-label>
               </q-item-section>
 
-              <q-item-section side>
+              <!-- <q-item-section side>
                 <div class="q-gutter-md">
                     <q-btn size="12px" flat dense round icon="more_horiz" @click.stop="onClickItemActions(item)" />
                 </div>
-            </q-item-section>
+            </q-item-section> -->
             </q-item>
         </template>
     </q-list>
@@ -39,10 +39,12 @@
     <q-page-sticky position="bottom-right" :offset="[26, 26]">
         <q-fab color="primary" icon="more_vert" direction="up" padding="sm">
             <q-fab-action @click="onClickDeleteCompletedItems" icon="remove_done" external-label label-position="left" label="Delete completed items" />
-            <q-fab-action @click="onClickClearList" :disable="store.list.length == 0" icon="delete_sweep" external-label label-position="left" label="Clear all" />
-            <q-fab-action @click="onClickToggleShowCompletedItems" :icon="showCompletedItems ? 'visibility_off' : 'visibility'" external-label label-position="left" :label="showCompletedItems ? 'Hide completed items' : 'Show completed items'"/>
+            <q-fab-action @click="onClickClearList" :disable="items.length == 0" icon="delete_sweep" external-label label-position="left" label="Clear all" />
+            <q-fab-action @click="onClickToggleShowCompletedItems" :icon="store.list.showCompletedItems ? 'visibility_off' : 'visibility'" external-label label-position="left" :label="store.list.showCompletedItems ? 'Hide completed items' : 'Show completed items'"/>
         </q-fab>
     </q-page-sticky>
+
+    <AddItemDialog v-model="addItemDialog.show" @add="onClickAddItemDialogAdd" />
   </q-page>
 </template>
 
@@ -54,39 +56,49 @@ import { useQuasar } from 'quasar'
 import dayjs from 'dayjs';
 import _ from 'lodash';
 import { useStore } from 'src/stores/store';
+import AddItemDialog from 'src/components/list/addItem.dialog.component.vue';
+
 
 const $q = useQuasar()
 const $notify = inject('notify');
-const showCompletedItems = ref(true);
 const store = useStore();
+const addItemDialog = ref({ show: false });
 
 const awaitTimeout = delay => new Promise(resolve => setTimeout(resolve, delay));
 
+const items = computed(() => {
+  return store.list.items || [];
+})
+
 const categories = computed(() => {
-    if (store.list.length == 0) {
+    if (items.value.length == 0) {
         return [];
     }
     else {
-      const categoryTitles = _.uniq(store.list.map(item => item.category)).sort();
-      return categoryTitles.map(category => ({ title: category, items: store.list.filter(item => (item.category == category) && (['open', 'almost-completed'].includes(item.status) || showCompletedItems.value)) }))
+      const categoryTitles = _.uniq(items.value.map(item => item.category)).sort();
+      return categoryTitles.map(category => ({ title: category, items: items.value.filter(item => (item.category == category) && (['open', 'almost-completed'].includes(item.status) || store.list.showCompletedItems)) }))
           .filter(category => category.items.length > 0);
     }
 });
 
 const onClickAddItem = () => {
-
+  addItemDialog.value.show = true;
 };
 
 const onClickDeleteCompletedItems = async () => {
-
+  if (await store.deleteCompletedItems()) {
+        $notify('Completed items deleted!');
+    }
 };
 
 const onClickClearList = async () => {
-
+    if (await store.clearList()) {
+        $notify('List cleared!');
+    }
 };
 
 const onClickToggleShowCompletedItems = async (show) => {
-    showCompletedItems.value = !showCompletedItems.value;
+    await store.showCompletedItems(!store.list.showCompletedItems);
 };
 
 const onClickCompleteItem = async (item) => {
@@ -110,6 +122,16 @@ const onClickEditItem = async (item) => {
 
 const onClickItemActions = async (item) => {
 
+};
+
+const onClickAddItemDialogAdd = async (item) => {
+  const id = await store.addItem(item);
+
+    $notify(`${item.name} added!`, {
+        actions: [
+            { label: 'Undo', color: 'white', handler: () => { store.removeItem(id); } }
+        ]
+    });
 };
 
 

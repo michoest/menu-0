@@ -1,13 +1,13 @@
 <template>
   <q-page>
     <q-list v-if="dishes.length > 0" class="q-pt-md">
-      <q-item class="flex justify-center">
+      <!-- <q-item class="flex justify-center">
                 <q-input v-model="search" standout rounded dense clearable placeholder="Mmmmhhhes Schompf" style="width: 60%; min-width: 300px;">
                     <template v-slot:prepend>
                         <q-icon name="search" />
                     </template>
                 </q-input>
-            </q-item>
+            </q-item> -->
 
             <q-expansion-item expand-icon-toggle switch-toggle-side
                 v-for="dish in dishes" :key="dish.dish.id" :content-inset-level="1">
@@ -27,7 +27,7 @@
                     </template>
                     <q-card>
                         <q-card-section>
-                            <span class="text-bold">Zutaten pro Portion:</span> {{ dish.dish.ingredients.join(', ') }}
+                            <span class="text-bold">Zutaten pro Portion:</span> {{ dish.dish.ingredients.map(ingredient => ingredientToString(ingredient)).join(', ') }}
                         </q-card-section>
                         <!-- <q-card-section v-if="dish.dish.subdishes.length > 0">
                             <span class="text-bold">Sub-dishes:</span> {{ dish.dish.subdishes.map(subdish => `${dishes.find(dish => dish.dish._id == subdish.dish).dish.title} (Menge: ${subdish.amountFactor})`).join(', ') }}
@@ -101,8 +101,8 @@ const onClickChooseIngredients = () => {
     chooseIngredientsDialog.value.show = true;
 };
 
-const onClickAdd = () => {
-  if (true) {
+const onClickAdd = async (ingredients) => {
+  if (await store.addToList(ingredients)) {
         $notify(`Ingredients added to list!`, { actions: [{ label: 'Show', color: 'white', handler: () => { $router.push(`/list`); } }] });
     }
 
@@ -115,4 +115,18 @@ onMounted(async () => {
   dishes.value = store.menu.dishes.map(dish => ({ dish: dish, amount: 0 })).sort((a, b) => a.dish.title.localeCompare(b.dish.title));
 
 })
+
+const ingredientToString = (ingredient) => {
+    if (ingredient.amount.unit == null) {
+        return ingredient.name;
+    }
+    else {
+        if (ingredient.amount.unit == '') {
+            return `${ingredient.amount.value} ${ingredient.name}`;
+        }
+        else {
+            return `${ingredient.amount.value} ${ingredient.amount.unit} ${ingredient.name}`;
+        }
+    }
+};
 </script>

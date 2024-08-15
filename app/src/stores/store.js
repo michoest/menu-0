@@ -7,8 +7,8 @@ import { notify } from 'boot/notify';
 export const useStore = defineStore('store', {
   state: () => ({
     user: 'roßes',
-    list: [],
-    menu: []
+    list: { items: [], showCompletedItems: false },
+    menu: { dishes: [], ingredients: [] }
   }),
   getters: {
 
@@ -32,6 +32,20 @@ export const useStore = defineStore('store', {
         notify(`Error: ${err}`, 'negative');
       }
     },
+    async addItem(item) {
+      try {
+          const response = await axios.post(`https://server.michoest.com/list/item/`, item);
+          this.list = response.data.list;
+
+          return response.data.id;
+
+      }
+      catch (err) {
+          console.error('There was an error fetching the list:', err);
+
+          return false;
+      };
+  },
     async completeItem(itemId) {
       try {
           const response = await axios.post(`https://server.michoest.com/list/item/${itemId}/complete`);
@@ -60,15 +74,51 @@ export const useStore = defineStore('store', {
 },
 async addToList(ingredients) {
   try {
-      const response = await api.post(`/api/menu/`, { ingredients });
+      const response = await axios.post(`https://server.michoest.com/menu/`, { ingredients });
       this.list = response.data;
-      
+
       return true;
   }
   catch (err) {
       console.error('There was an error adding the ingredients:', err);
 
       return false;
+  }
+},
+async clearList() {
+  try {
+      const response = await axios.post(`https://server.michoest.com/list/clear`);
+      this.list = response.data;
+
+      return true;
+  }
+  catch (err) {
+      console.error('There was an error fetching the list:', err);
+
+      return false;
+  }
+},
+async deleteCompletedItems() {
+  try {
+      const response = await axios.delete(`https://server.michoest.com/list/delete-completed-items`);
+      this.list = response.data;
+
+      return true;
+  }
+  catch (err) {
+      console.error('There was an error fetching the list:', err);
+
+      return false;
+  }
+},
+async showCompletedItems(show) {
+  try {
+      const response = await axios.post(`https://server.michoest.com/list/show-completed-items/${show}`);
+
+      this.list.showCompletedItems = show;
+  }
+  catch (err) {
+      console.error('There was an error:', err);
   }
 },
   }

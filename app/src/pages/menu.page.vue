@@ -112,6 +112,6 @@ const onClickAdd = () => {
 
 onMounted(async () => {
   await store.fetchMenu()
-  dishes.value = store.menu.map(dish => ({ dish: dish, amount: 0 }));
+  dishes.value = store.menu.dishes.map(dish => ({ dish: dish, amount: 0 }));
 })
 </script>

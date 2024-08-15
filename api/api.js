@@ -10,7 +10,7 @@ app.use(cors());
 app.use(bodyParser.json());
 
 // Sample data
-const db = require('db');
+const db = require('./db');
 
 app.get('/menu', async (req, res) => {
   try {

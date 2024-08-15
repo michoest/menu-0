@@ -1,6 +1,7 @@
 module.exports = {
     list: [],
-    menu: dishes: [
+    menu: {
+        dishes: [
         {
             title: 'Cadolat',
             category: 'Lat',
@@ -2753,4 +2754,5 @@ module.exports = {
         { name: 'Rüne Bohnen', vendor: 'Markt (Müsetand)' },
         { name: 'Bohnenraut', vendor: 'Markt (Müsetand)' }
     ]
+}
 }

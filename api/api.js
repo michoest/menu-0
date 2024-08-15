@@ -46,6 +46,12 @@ app.post('/list/item/:id/open', async (req, res, next) => {
     return res.json(db.list);
 });
 
+app.post('/list/clear', async (req, res, next) => {
+    db.list = [];
+    
+    return res.json(db.list);
+});
+
 app.post('/menu', async (req, res, next) => {
     const { ingredients } = req.body;
 
@@ -58,7 +64,7 @@ app.post('/menu', async (req, res, next) => {
     for (const ingredient of listIngredients) {
         const item = { 
             id: uuidv4(),
-            title: ingredient.name, 
+            name: ingredient.name, 
             category: vendors[ingredient.name] || '', 
             notes: amountsToString(ingredient.amounts),
             ...ingredient.due && { due: { date: ingredient.due } }

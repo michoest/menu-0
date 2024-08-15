@@ -111,7 +111,8 @@ const onClickAdd = () => {
 };
 
 onMounted(async () => {
-  await store.fetchMenu()
-  dishes.value = store.menu.dishes.map(dish => ({ dish: dish, amount: 0 }));
+  await store.fetchMenu();
+  dishes.value = store.menu.dishes.map(dish => ({ dish: dish, amount: 0 })).sort((a, b) => a.dish.title.localeCompare(b.dish.title));
+
 })
 </script>

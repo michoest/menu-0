@@ -21,17 +21,17 @@
                               <q-chip removable :model-value="!!ingredient.due" @remove="ingredient.due = null" class="q-mx-sm" outline color="primary" text-color="white">
                                       {{ ingredient.due.fromNow() }}
                                   </q-chip>
-                              <q-btn v-if="!ingredient.due" size="12px" flat dense round icon="trending_flat" @click.stop="onClickPostponeIngredient(dish, ingredient)" />
+                              <!-- <q-btn v-if="!ingredient.due" size="12px" flat dense round icon="trending_flat" @click.stop="onClickPostponeIngredient(dish, ingredient)" /> -->
                           </q-item-section>
                       </q-item>
-                      <q-item clickable @click="onClickAddIngredient(dish)">
+                      <!-- <q-item clickable @click="onClickAddIngredient(dish)">
                           <q-item-section side top>
                               <q-btn size="12px" flat dense round color="primary" icon="add_circle_outline" />
                           </q-item-section>
                           <q-item-section>
                               <q-item-label>Add ingredient...</q-item-label>
                           </q-item-section>
-                      </q-item>
+                      </q-item> -->
                   </template>
               </q-list>
           </q-card-section>

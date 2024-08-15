@@ -1,5 +1,7 @@
 module.exports = {
-    list: [],
+    list: [
+        
+    ],
     menu: {
         dishes: [
         {

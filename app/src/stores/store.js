@@ -58,5 +58,18 @@ export const useStore = defineStore('store', {
       return false;
   }
 },
+async addToList(ingredients) {
+  try {
+      const response = await api.post(`/api/menu/`, { ingredients });
+      this.list = response.data;
+      
+      return true;
+  }
+  catch (err) {
+      console.error('There was an error adding the ingredients:', err);
+
+      return false;
+  }
+},
   }
 });

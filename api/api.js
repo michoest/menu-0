@@ -30,26 +30,54 @@ app.get('/list', async (req, res) => {
   }
 });
 
-app.post('/list/item/:id/complete', async (req, res, next) => {
-    const item = db.list.find(item => item.id == req.params.id);
+app.post('/list/item', async (req, res, next) => {
+    const item = {
+        id: uuidv4(),
+        ...req.body 
+    };
 
+    db.list.items.unshift(item);
+
+    return res.json({ list: db.list, id: item.id });
+});
+
+app.put('/list/item/:id', async (req, res, next) => {
+    db.list.items.find(item => item.id == req.params.id).assign(req.body);
+
+    return res.json(db.list);
+});
+
+app.post('/list/item/:id/complete', async (req, res, next) => {
+    const item = db.list.items.find(item => item.id == req.params.id);
     item.status = 'completed';
     
     return res.json(db.list);
 });
 
 app.post('/list/item/:id/open', async (req, res, next) => {
-    const item = db.list.find(item => item.id == req.params.id);
-
+    const item = db.list.items.find(item => item.id == req.params.id);
     item.status = 'open';
     
     return res.json(db.list);
 });
 
 app.post('/list/clear', async (req, res, next) => {
-    db.list = [];
+    db.list.items = [];
     
     return res.json(db.list);
+});
+
+app.delete('/list/delete-completed-items', async (req, res, next) => {
+    db.list.items = db.list.items.filter(item => item.status != 'completed');
+    
+    return res.json(db.list);
+});
+
+app.post('/list/show-completed-items/:show', async (req, res, next) => {
+    // TODOv4: Validate schema
+    db.list.showCompletedItems = req.params.show;
+    
+    return res.json({ success: true });
 });
 
 app.post('/menu', async (req, res, next) => {
@@ -67,9 +95,10 @@ app.post('/menu', async (req, res, next) => {
             name: ingredient.name, 
             category: vendors[ingredient.name] || '', 
             notes: amountsToString(ingredient.amounts),
+            status: 'open',
             ...ingredient.due && { due: { date: ingredient.due } }
         };
-        db.list.push(item);
+        db.list.items.push(item);
     }
 
     console.log('Missing ingredients: ', listIngredients.filter(ingredient => !vendors[ingredient.name]).map(ingredient => ({ name: ingredient.name, vendor: '' })));

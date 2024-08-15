@@ -1,7 +1,10 @@
 module.exports = {
-    list: [
+    list: {
+        items: [
         
-    ],
+        ],
+        showCompletedItems: false
+    },
     menu: {
         dishes: [
         {

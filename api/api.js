@@ -78,7 +78,7 @@ app.get('/list', async (req, res) => {
   }
 });
 
-app.post('/item/:id/complete', async (req, res, next) => {
+app.post('/list/item/:id/complete', async (req, res, next) => {
     const item = db.list.find(item => item.id == req.params.id);
 
     item.status = 'completed';

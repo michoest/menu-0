@@ -86,6 +86,14 @@ app.post('/list/item/:id/complete', async (req, res, next) => {
     return res.json(db.list);
 });
 
+app.post('/list/item/:id/open', async (req, res, next) => {
+    const item = db.list.find(item => item.id == req.params.id);
+
+    item.status = 'open';
+    
+    return res.json(db.list);
+});
+
 // Start the server
 app.listen(port, () => {
   console.log(`Server running on http://localhost:${port}`);

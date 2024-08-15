@@ -13,7 +13,7 @@ app.use(bodyParser.json());
 const users = [
   { id: 1, name: 'Roßes' },
   { id: 2, name: 'Leines' },
-  { id: 3, name: 'Charlie' }
+  { id: 3, name: 'Bychen' }
 ];
 
 const menu = [

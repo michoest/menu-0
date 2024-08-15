@@ -1,1 +1,0 @@
-import{Q as e}from"./QPage.b135cc3a.js";import{E as a,F as t,G as r,U as s}from"./index.274522c1.js";import"./render.23090be3.js";const u=Object.assign({name:"MenuPage"},{__name:"menu.page",setup(c){return(n,o)=>(a(),t(e,{class:"flex flex-center"},{default:r(()=>[s(" Menu ")]),_:1}))}});export{u as default};

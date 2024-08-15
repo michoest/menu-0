@@ -5,10 +5,11 @@
     </q-page-container>
 
     <q-footer class="bg-white text-primary">
+      <q-separator />
       <q-tabs v-model="tab" align="justify">
-        <q-route-tab v-if="store.user" name="menu" icon="restaurant_menu" label="Menu" to="/menu" />
-        <q-route-tab v-if="store.user" name="list" icon="list" label="List" to="/list" />
-        <q-route-tab name="settings" icon="settings" label="Settings" to="/settings" />
+        <q-route-tab v-if="store.user" name="menu" icon="restaurant_menu" to="/menu" />
+        <q-route-tab v-if="store.user" name="list" icon="list" to="/list" />
+        <q-route-tab name="settings" icon="settings" to="/settings" />
       </q-tabs>
     </q-footer>
   </q-layout>

@@ -108,7 +108,7 @@ app.post('/menu', async (req, res, next) => {
             category: vendors[ingredient.name] || '', 
             notes: amountsToString(ingredient.amounts),
             status: 'open',
-            ...ingredient.due && { due: { date: ingredient.due } }
+            ...ingredient.due && { due: ingredient.due }
         };
         db.list.items.push(item);
     }
@@ -142,7 +142,6 @@ const addAmountToList = (list, amount) => {
 }
 
 const addIngredientToList = (list, ingredient) => {
-    // TODOv5: Take a look at cloneDeep
     const newList = _.cloneDeep(list);
 
     if (newList.find(item => item.name == ingredient.name && item.due == ingredient.due) == undefined) {
@@ -161,7 +160,6 @@ const amountsToString = (amounts) => {
         return '';
     }
     else {
-        // TODOv5: Handle spaces correctly
         return amounts.map(amount => `${amount.value} ${amount.unit}`).join(' + ');
     }
 }

@@ -4,6 +4,7 @@ const bodyParser = require('body-parser');
 const _ = require('lodash');
 const { v4: uuidv4 } = require('uuid');
 const helmet = require('helmet');
+const fs = require('fs').promises;
 
 const app = express();
 const port = 3001;
@@ -24,10 +25,7 @@ app.use(helmet({
   }));
 
 // Load data and assign ids
-const db = require('./db');
-db.list.items.forEach(item => item.id = uuidv4());
-db.menu.dishes.forEach(dish => dish.id = uuidv4());
-db.menu.dishes.forEach(dish => dish.subdishes?.forEach(subdish => subdish.dish = db.menu.dishes.find(dish_ => dish_.title = subdish.dish)?.id));
+let db = {};
 
 
 app.get('/menu', async (req, res) => {
@@ -167,8 +165,38 @@ const amountsToString = (amounts) => {
         return amounts.map(amount => `${amount.value} ${amount.unit}`).join(' + ');
     }
 }
+  
+async function saveDb() {
+    console.log('Saving in-memory database to file...');
+
+    try {
+        const data = JSON.stringify(db, null, 2);
+        await fs.writeFile('./db.json', data, 'utf8');
+        console.log('Data successfully saved to file');
+      } catch (error) {
+        console.error('Error writing file:', error);
+      }
+
+    process.exit(0);
+}
+
+process.on('SIGTERM', saveDb);
+process.on('SIGINT', saveDb);
 
 // Start the server
-app.listen(port, () => {
-  console.log(`Server running on http://localhost:${port}`);
+app.listen(port, async () => {
+    try {
+        const data = await fs.readFile('./db.json', 'utf8');
+        db = JSON.parse(data);
+        console.log('Database loaded successfully');
+    } catch (error) {
+        if (error.code === 'ENOENT') {
+          console.log('No existing database file found. Starting with an empty database.');
+        } else {
+          console.error('Error reading database file:', error);
+        }
+        db = {}; // Ensure db is an empty object if file read fails
+    }
+
+    console.log(`Server running on http://localhost:${port}`);
 });

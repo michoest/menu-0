@@ -1,5 +1,5 @@
 <template>
-  <q-page>
+  <q-page :class="{ flex: categories.length == 0, 'flex-center': categories.length == 0 }">
     <q-list v-if="categories.length > 0" class="q-pt-md">
         <template v-for="category, index in categories" :key="index">
             <q-separator v-if="index > 0" inset />
@@ -19,12 +19,6 @@
                 </q-item-label>
                 <q-item-label caption>{{ item.notes }}</q-item-label>
               </q-item-section>
-
-              <!-- <q-item-section side>
-                <div class="q-gutter-md">
-                    <q-btn size="12px" flat dense round icon="more_horiz" @click.stop="onClickItemActions(item)" />
-                </div>
-            </q-item-section> -->
             </q-item>
         </template>
     </q-list>
@@ -128,7 +122,7 @@ const onClickEditItem = async (item) => {
 const onClickSaveItem = async (item) => {
   await store.saveItem(item);
 
-    $notify(`${item.title} edited!`);
+    $notify(`${item.name} edited!`);
 };
 
 const onClickItemActions = async (item) => {

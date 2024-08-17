@@ -22,7 +22,8 @@ module.exports = configure(function (/* ctx */) {
     // https://v2.quasar.dev/quasar-cli-vite/boot-files
     boot: [
       'axios',
-      'notify'
+      'notify',
+      'build-info'
     ],
 
     // https://v2.quasar.dev/quasar-cli-vite/quasar-config-js#css
@@ -60,7 +61,9 @@ module.exports = configure(function (/* ctx */) {
 
       // publicPath: '/',
       // analyze: true,
-      // env: {},
+      env: {
+        BUILD_DATE: JSON.stringify(new Date().toISOString())
+      },
       // rawDefine: {}
       // ignorePublicFolder: true,
       // minify: false,
@@ -87,7 +90,11 @@ module.exports = configure(function (/* ctx */) {
 
     // https://v2.quasar.dev/quasar-cli-vite/quasar-config-js#framework
     framework: {
-      config: {},
+      config: {
+        screen: {
+          bodyClasses: true
+        }
+      },
 
       // iconSet: 'material-icons', // Quasar icon set
       // lang: 'en-US', // Quasar language pack

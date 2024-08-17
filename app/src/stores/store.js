@@ -9,7 +9,8 @@ export const useStore = defineStore('store', {
     user: 'roßes',
     list: { items: [], showCompletedItems: false },
     menu: { dishes: [], ingredients: [] },
-    api: 'https://menu.server.michoest.com'
+    api: 'https://menu.server.michoest.com',
+    // api: 'http://localhost:3001'
   }),
   getters: {
 
@@ -50,7 +51,7 @@ export const useStore = defineStore('store', {
   async saveItem(item) {
     try {
         const response = await axios.put(`${this.api}/list/item/${item.id}`, item);
-        this.list = response.data.list;
+        this.list = response.data;
     }
     catch (err) {
       notify(`Error: ${err}`, { type: 'negative' });

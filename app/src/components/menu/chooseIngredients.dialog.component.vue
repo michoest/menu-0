@@ -45,8 +45,8 @@
   </q-dialog>
 
    <AddIngredientDialog v-model="addIngredientDialog.show" @add="onClickAddIngredientDialogAdd" />
-  <!--<EditIngredientDialog v-model="editIngredientDialog.show" :ingredient="editIngredientDialog.ingredient" @save="onClickEditIngredientDialogSave" />
--->
+  <EditIngredientDialog v-model="editIngredientDialog.show" :ingredient="editIngredientDialog.ingredient" @save="onClickEditIngredientDialogSave" />
+
 </template>
 
 <script setup>
@@ -58,7 +58,7 @@ import relativeTime from 'dayjs/plugin/relativeTime';
 dayjs.extend(relativeTime);
 
 import AddIngredientDialog from './addIngredient.dialog.component.vue';
-// import EditIngredientDialog from './editIngredient.dialog.component.vue';
+import EditIngredientDialog from './editIngredient.dialog.component.vue';
 
 const show = defineModel();
 const props = defineProps({

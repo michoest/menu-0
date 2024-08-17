@@ -30,7 +30,7 @@
                             <span class="text-bold">Zutaten pro Portion:</span> {{ dish.dish.ingredients.map(ingredient => ingredientToString(ingredient)).join(', ') }}
                         </q-card-section>
                         <q-card-section v-if="dish.dish.subdishes && dish.dish.subdishes.length > 0">
-                            <span class="text-bold">Sub-dishes:</span> {{ dish.dish.subdishes.map(subdish => `${subdish.dish} (Menge: ${subdish.amountFactor})`).join(', ') }}
+                            <span class="text-bold">Sub-dishes:</span> {{ dish.dish.subdishes.map(subdish => `${dishes.find(dish => dish.dish.id == subdish.dish).dish.title} (Menge: ${subdish.amountFactor})`).join(', ') }}
                         </q-card-section>
                         <q-separator inset />
                     </q-card>
@@ -91,9 +91,9 @@ const onClickChooseIngredients = () => {
         });
 
         dish.dish.subdishes?.forEach(subdish => {
-            subdish.dish = dishes.value.find(dish => dish.dish._id == subdish.dish).dish;
+            subdish.dish = dishes.value.find(dish => dish.dish.id == subdish.dish).dish;
             subdish.dish.ingredients.forEach(ingredient => {
-                dish.dish.ingredients.push({ name: ingredient.name, amount: { value: ingredient.amount.value * dish.amount * subdish.amountFactor, unit: ingredient.amount.unit }, optional: ingredient.optional || subdish.optional, subdish: subdish.dish.title });
+                dish.dish.ingredients.push({ name: ingredient.name, amount: { value: ingredient.amount.value != null ? ingredient.amount.value * dish.amount * subdish.amountFactor : null, unit: ingredient.amount.unit }, optional: ingredient.optional || subdish.optional, subdish: subdish.dish.title });
             });
         });
     });

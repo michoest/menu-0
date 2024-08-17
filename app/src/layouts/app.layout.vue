@@ -9,7 +9,7 @@
       <q-tabs v-model="tab" align="justify">
         <q-route-tab v-if="store.user" name="menu" icon="restaurant_menu" to="/menu" />
         <q-route-tab v-if="store.user" name="list" icon="list" to="/list" />
-        <q-route-tab name="settings" icon="settings" to="/settings" disable />
+        <q-route-tab name="settings" icon="settings" to="/settings" />
       </q-tabs>
     </q-footer>
   </q-layout>

@@ -7,3 +7,9 @@ defineOptions({
   name: 'App'
 });
 </script>
+
+<style>
+html, body {
+  touch-action: manipulation;
+}
+</style>

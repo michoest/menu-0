@@ -23,8 +23,12 @@ app.use(helmet({
     },
   }));
 
-// Sample data
+// Load data and assign ids
 const db = require('./db');
+db.list.items.forEach(item => item.id = uuidv4());
+db.menu.dishes.forEach(dish => dish.id = uuidv4());
+db.menu.dishes.forEach(dish => dish.subdishes?.forEach(subdish => subdish.dish = db.menu.dishes.find(dish_ => dish_.title = subdish.dish)?.id));
+
 
 app.get('/menu', async (req, res) => {
   try {
@@ -55,7 +59,7 @@ app.post('/list/item', async (req, res, next) => {
 });
 
 app.put('/list/item/:id', async (req, res, next) => {
-    db.list.items.find(item => item.id == req.params.id).assign(req.body);
+    Object.assign(db.list.items.find(item => item.id == req.params.id), req.body);
 
     return res.json(db.list);
 });
@@ -87,7 +91,7 @@ app.delete('/list/delete-completed-items', async (req, res, next) => {
 });
 
 app.post('/list/show-completed-items/:show', async (req, res, next) => {
-    db.list.showCompletedItems = req.params.show;
+    db.list.showCompletedItems = req.params.show == 'true';
     
     return res.json({ success: true });
 });
@@ -113,7 +117,7 @@ app.post('/menu', async (req, res, next) => {
         db.list.items.push(item);
     }
 
-    console.log('Missing ingredients: ', listIngredients.filter(ingredient => !vendors[ingredient.name]).map(ingredient => ({ name: ingredient.name, vendor: '' })));
+    // console.log('Missing ingredients: ', listIngredients.filter(ingredient => !vendors[ingredient.name]).map(ingredient => ({ name: ingredient.name, vendor: '' })));
 
     return res.json(db.list);
 });

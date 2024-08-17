@@ -12,10 +12,10 @@
                     round icon="done" @click="onClickOpenItem(item)" />
               </q-item-section>
 
-              <q-item-section>
+              <q-item-section @click="onClickEditItem(item)">
                 <q-item-label>
                   {{ item.name }}
-                  <q-badge v-if="item.due" class="q-mx-sm" color="accent">{{ dayjs(item.due).format('YYYY-MM-DD') }}</q-badge>
+                  <q-badge v-if="item.due" class="q-mx-sm" color="accent">{{ dayjs(item.due).fromNow() }}</q-badge>
                 </q-item-label>
                 <q-item-label caption>{{ item.notes }}</q-item-label>
               </q-item-section>
@@ -45,6 +45,8 @@
     </q-page-sticky>
 
     <AddItemDialog v-model="addItemDialog.show" @add="onClickAddItemDialogAdd" />
+    <EditItemDialog v-model="editItemDialog.show" :item="editItemDialog.item" @save="onClickSaveItem" />
+
   </q-page>
 </template>
 
@@ -54,15 +56,17 @@ defineOptions({ name: 'ListPage' });
 import { ref, onMounted, computed, inject } from 'vue'
 import { useQuasar } from 'quasar'
 import dayjs from 'dayjs';
+import relativeTime from 'dayjs/plugin/relativeTime';
+dayjs.extend(relativeTime);
 import _ from 'lodash';
 import { useStore } from 'src/stores/store';
 import AddItemDialog from 'src/components/list/addItem.dialog.component.vue';
+import EditItemDialog from 'src/components/list/editItem.dialog.component.vue';
 
-
-const $q = useQuasar()
 const $notify = inject('notify');
 const store = useStore();
 const addItemDialog = ref({ show: false });
+const editItemDialog = ref({ show: false, item: null });
 
 const awaitTimeout = delay => new Promise(resolve => setTimeout(resolve, delay));
 
@@ -117,7 +121,14 @@ const onClickOpenItem = async (item) => {
 };
 
 const onClickEditItem = async (item) => {
+  editItemDialog.value.item = _.cloneDeep(item);
+  editItemDialog.value.show = true;
+};
 
+const onClickSaveItem = async (item) => {
+  await store.saveItem(item);
+
+    $notify(`${item.title} edited!`);
 };
 
 const onClickItemActions = async (item) => {

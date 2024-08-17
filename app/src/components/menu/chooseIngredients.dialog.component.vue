@@ -14,24 +14,24 @@
                                   {{ ingredient.name }}
                                   <q-badge v-if="ingredient.subdish" class="q-mx-sm" color="secondary">{{ ingredient.subdish }}</q-badge>
                                   <q-badge v-if="ingredient.optional" class="q-mx-sm">Optional</q-badge>
+                                  <q-chip removable dense :model-value="!!ingredient.due" @remove="ingredient.due = null" class="q-mx-sm" outline color="accent" text-color="white">
+                                      {{ ingredient.due.fromNow() }}
+                                  </q-chip>
                               </q-item-label>
                               <q-item-label caption>{{ ingredient.amount.value }} {{ ingredient.amount.unit }}</q-item-label>
                           </q-item-section>
-                          <q-item-section side top>
-                              <q-chip removable :model-value="!!ingredient.due" @remove="ingredient.due = null" class="q-mx-sm" outline color="primary" text-color="white">
-                                      {{ ingredient.due.fromNow() }}
-                                  </q-chip>
-                              <!-- <q-btn v-if="!ingredient.due" size="12px" flat dense round icon="trending_flat" @click.stop="onClickPostponeIngredient(dish, ingredient)" /> -->
+                          <q-item-section side>
+                              <q-btn size="12px" flat dense round icon="trending_flat" @click.stop="onClickPostponeIngredient(ingredient)" />
                           </q-item-section>
                       </q-item>
-                      <!-- <q-item clickable @click="onClickAddIngredient(dish)">
+                      <q-item clickable @click="onClickAddIngredient(dish)">
                           <q-item-section side top>
                               <q-btn size="12px" flat dense round color="primary" icon="add_circle_outline" />
                           </q-item-section>
                           <q-item-section>
                               <q-item-label>Add ingredient...</q-item-label>
                           </q-item-section>
-                      </q-item> -->
+                      </q-item>
                   </template>
               </q-list>
           </q-card-section>
@@ -44,9 +44,9 @@
       </q-card>
   </q-dialog>
 
-  <!-- <AddIngredientDialog v-model="addIngredientDialog.show" @add="onClickAddIngredientDialogAdd" />
-  <EditIngredientDialog v-model="editIngredientDialog.show" :ingredient="editIngredientDialog.ingredient" @save="onClickEditIngredientDialogSave" />
-  <PostponeIngredientDialog v-model="postponeIngredientDialog.show" @postpone="onClickPostponeIngredientDialogPostpone" /> -->
+   <AddIngredientDialog v-model="addIngredientDialog.show" @add="onClickAddIngredientDialogAdd" />
+  <!--<EditIngredientDialog v-model="editIngredientDialog.show" :ingredient="editIngredientDialog.ingredient" @save="onClickEditIngredientDialogSave" />
+-->
 </template>
 
 <script setup>
@@ -57,9 +57,8 @@ import dayjs from 'dayjs';
 import relativeTime from 'dayjs/plugin/relativeTime';
 dayjs.extend(relativeTime);
 
-// import AddIngredientDialog from './addIngredient.dialog.component.vue';
+import AddIngredientDialog from './addIngredient.dialog.component.vue';
 // import EditIngredientDialog from './editIngredient.dialog.component.vue';
-// import PostponeIngredientDialog from './postponeIngredient.dialog.component.vue';
 
 const show = defineModel();
 const props = defineProps({
@@ -122,13 +121,12 @@ const onClickRemoveIngredient = async (dish, index) => {
   dish.dish.ingredients.splice(index, 1);
 };
 
-const onClickPostponeIngredient = (dish, ingredient) => {
-  postponeIngredientDialog.value.ingredient = ingredient;
-  postponeIngredientDialog.value.show = true;
+const onClickPostponeIngredient = (ingredient) => {
+  if (!ingredient.due) {
+    ingredient.due = dayjs().add(1, 'd');
+  }
+  else {
+    ingredient.due = ingredient.due.add(1, 'd');
+  }
 };
-
-const onClickPostponeIngredientDialogPostpone = (date) => {
-  postponeIngredientDialog.value.ingredient.due = date;
-};
-
 </script>

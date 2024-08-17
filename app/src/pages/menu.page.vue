@@ -1,16 +1,16 @@
 <template>
   <q-page>
     <q-list v-if="dishes.length > 0" class="q-pt-md">
-      <!-- <q-item class="flex justify-center">
+      <q-item class="flex justify-center">
                 <q-input v-model="search" standout rounded dense clearable placeholder="Mmmmhhhes Schompf" style="width: 60%; min-width: 300px;">
                     <template v-slot:prepend>
                         <q-icon name="search" />
                     </template>
                 </q-input>
-            </q-item> -->
+            </q-item>
 
             <q-expansion-item expand-icon-toggle switch-toggle-side
-                v-for="dish in dishes" :key="dish.dish.id" :content-inset-level="1">
+                v-for="dish in filteredDishes" :key="dish.dish.id" :content-inset-level="1">
                     <template v-slot:header>
                         <q-item-section>
                             <q-item-label>{{ dish.dish.title }}</q-item-label>
@@ -29,9 +29,9 @@
                         <q-card-section>
                             <span class="text-bold">Zutaten pro Portion:</span> {{ dish.dish.ingredients.map(ingredient => ingredientToString(ingredient)).join(', ') }}
                         </q-card-section>
-                        <!-- <q-card-section v-if="dish.dish.subdishes.length > 0">
-                            <span class="text-bold">Sub-dishes:</span> {{ dish.dish.subdishes.map(subdish => `${dishes.find(dish => dish.dish._id == subdish.dish).dish.title} (Menge: ${subdish.amountFactor})`).join(', ') }}
-                        </q-card-section> -->
+                        <q-card-section v-if="dish.dish.subdishes && dish.dish.subdishes.length > 0">
+                            <span class="text-bold">Sub-dishes:</span> {{ dish.dish.subdishes.map(subdish => `${subdish.dish} (Menge: ${subdish.amountFactor})`).join(', ') }}
+                        </q-card-section>
                         <q-separator inset />
                     </q-card>
                 </q-expansion-item>
@@ -90,12 +90,12 @@ const onClickChooseIngredients = () => {
             ingredient.amount.value = ingredient.amount.unit != null ? ingredient.amount.value * dish.amount : ingredient.amount.value;
         });
 
-        // dish.dish.subdishes?.forEach(subdish => {
-        //     subdish.dish = dishes.value.find(dish => dish.dish._id == subdish.dish).dish;
-        //     subdish.dish.ingredients.forEach(ingredient => {
-        //         dish.dish.ingredients.push({ name: ingredient.name, amount: { value: ingredient.amount.value * dish.amount * subdish.amountFactor, unit: ingredient.amount.unit }, optional: ingredient.optional || subdish.optional, subdish: subdish.dish.title });
-        //     });
-        // });
+        dish.dish.subdishes?.forEach(subdish => {
+            subdish.dish = dishes.value.find(dish => dish.dish._id == subdish.dish).dish;
+            subdish.dish.ingredients.forEach(ingredient => {
+                dish.dish.ingredients.push({ name: ingredient.name, amount: { value: ingredient.amount.value * dish.amount * subdish.amountFactor, unit: ingredient.amount.unit }, optional: ingredient.optional || subdish.optional, subdish: subdish.dish.title });
+            });
+        });
     });
 
     chooseIngredientsDialog.value.show = true;
@@ -113,8 +113,11 @@ const onClickAdd = async (ingredients) => {
 onMounted(async () => {
   await store.fetchMenu();
   dishes.value = store.menu.dishes.map(dish => ({ dish: dish, amount: 0 })).sort((a, b) => a.dish.title.localeCompare(b.dish.title));
-
 })
+
+const filteredDishes = computed(() => {
+  return search.value ? dishes.value.filter(dish => JSON.stringify(dish.dish).toLowerCase().includes(search.value.toLowerCase())) : dishes.value;
+});
 
 const ingredientToString = (ingredient) => {
     if (ingredient.amount.unit == null) {

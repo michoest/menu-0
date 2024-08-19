@@ -25,19 +25,25 @@
                             </div>
                         </q-item-section>
                     </template>
-                    <q-card>
-                        <q-card-section>
-                            <span class="text-bold">Zutaten pro Portion:</span> {{ dish.dish.ingredients.map(ingredient => ingredientToString(ingredient)).join(', ') }}
-                        </q-card-section>
-                        <q-card-section v-if="dish.dish.subdishes && dish.dish.subdishes.length > 0">
-                            <span class="text-bold">Sub-dishes:</span> {{ dish.dish.subdishes.map(subdish => `${dishes.find(dish => dish.dish.id == subdish.dish).dish.title} (Menge: ${subdish.amountFactor})`).join(', ') }}
-                        </q-card-section>
-                        <q-separator inset />
-                    </q-card>
+                    <q-item>
+                      <q-item-section>
+                        <div>
+                          <span class="text-bold">Zutaten pro Portion:</span> {{ dish.dish.ingredients.map(ingredient => ingredientToString(ingredient)).join(', ') }}
+                        </div>
+                        <div v-if="dish.dish.subdishes && dish.dish.subdishes.length > 0" class="q-mt-md">
+                          <span class="text-bold">Sub-dishes:</span> {{ dish.dish.subdishes.map(subdish => `${dishes.find(dish => dish.dish.id == subdish.dish).dish.title} (Menge: ${subdish.amountFactor})`).join(', ') }}
+                        </div>
+                        </q-item-section>
+                      <q-item-section side>
+                        <q-btn flat round icon="edit" @click="onClickEditDish(dish.dish)" />
+                      </q-item-section>
+                    </q-item>
+                    <q-separator inset />
+
                 </q-expansion-item>
     </q-list>
 
-    <q-page-sticky position="bottom" :offset="[0, 18]" style="z-index: 6000;">
+    <q-page-sticky position="bottom" :offset="[0, -28]" style="z-index: 6000;">
       <q-btn fab icon="checklist" color="accent" @click="onClickChooseIngredients" :disabled="disableChooseIngredients" />
     </q-page-sticky>
 
@@ -46,27 +52,27 @@
         :dishes="chooseIngredientsDialog.dishes"
         @add="onClickAdd"
     />
+
+    <EditDishDialog v-model="editDishDialog.show" :dish="editDishDialog.dish" @save="onClickEditDishSaveDish" />
   </q-page>
 </template>
 
 <script setup>
-defineOptions({ name: 'ListPage' });
+defineOptions({ name: 'MenuPage' });
 
 import { ref, onMounted, computed, inject } from 'vue'
 import { useRouter } from 'vue-router';
-import { useQuasar } from 'quasar'
-import dayjs from 'dayjs';
 import _ from 'lodash';
 import ChooseIngredientsDialog from 'components/menu/chooseIngredients.dialog.component.vue';
+import EditDishDialog from 'components/menu/editDish.dialog.component.vue';
 import { useStore } from 'src/stores/store';
 
-const $q = useQuasar()
 const $notify = inject('notify');
 const $router = useRouter();
-const showCompletedItems = ref(false);
 const disableChooseIngredients = ref(true);
 const search = ref('');
 const chooseIngredientsDialog = ref({ show: false, dishes: [] });
+const editDishDialog = ref({ show: false, dish: {} });
 const store = useStore();
 
 const dishes = ref([]);
@@ -103,11 +109,22 @@ const onClickChooseIngredients = () => {
 
 const onClickAdd = async (ingredients) => {
   if (await store.addToList(ingredients)) {
-        $notify(`Ingredients added to list!`, { actions: [{ label: 'Show', color: 'white', handler: () => { $router.push(`/list`); } }] });
-    }
+      $notify(`Ingredients added to list!`, { actions: [{ label: 'Show', color: 'white', handler: () => { $router.push(`/list`); } }] });
+  }
 
-    dishes.value.forEach(dish => dish.amount = 0);
-    disableChooseIngredients.value = true;
+  dishes.value.forEach(dish => dish.amount = 0);
+  disableChooseIngredients.value = true;
+};
+
+const onClickEditDish = (dish) => {
+  editDishDialog.value.dish = dish;
+  editDishDialog.value.show = true;
+};
+
+const onClickEditDishSaveDish = async (dish) => {
+  if (await store.editDish(dish)) {
+      $notify(`${dish.title} edited!`);
+  }
 };
 
 onMounted(async () => {

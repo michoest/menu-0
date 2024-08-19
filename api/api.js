@@ -14,37 +14,49 @@ app.use(cors());
 app.use(bodyParser.json());
 app.use(helmet({
     permissionsPolicy: {
-      directives: {
+        directives: {
         "run-ad-auction": [],
         "private-state-token-redemption": [],
         "private-state-token-issuance": [],
         "join-ad-interest-group": [],
         "browsing-topics": []
-      },
+        },
     },
-  }));
+}));
 
-// Load data and assign ids
+class APIError extends Error {
+    constructor(message, statusCode, info) {
+      super(message);
+      this.statusCode = statusCode;
+      this.status = `${statusCode}`.startsWith('4') ? 'fail' : 'error';
+      this.isOperational = true;
+      this.info = info;
+  
+      Error.captureStackTrace(this, this.constructor);
+    }
+} 
+
+function asyncWrapper(fn) {
+    return (req, res, next) => {
+        fn(req, res, next).catch(next);
+    };
+}
+
 let db = {};
 
+app.get('/ping', asyncWrapper(async(req, res, next) => {
+    return res.json();
+}));
 
-app.get('/menu', async (req, res) => {
-  try {
-    res.json(db.menu);
-  } catch (error) {
-    res.status(500).json({ message: 'Error fetching menu' });
-  }
-});
-
-app.get('/list', async (req, res) => {
+app.get('/list', asyncWrapper(async (req, res) => {
   try {
     res.json(db.list);
   } catch (error) {
     res.status(500).json({ message: 'Error fetching list' });
   }
-});
+}));
 
-app.post('/list/item', async (req, res, next) => {
+app.post('/list/item', asyncWrapper(async (req, res, next) => {
     const item = {
         id: uuidv4(),
         status: 'open',
@@ -54,47 +66,55 @@ app.post('/list/item', async (req, res, next) => {
     db.list.items.unshift(item);
 
     return res.json({ list: db.list, id: item.id });
-});
+}));
 
-app.put('/list/item/:id', async (req, res, next) => {
+app.put('/list/item/:id', asyncWrapper(async (req, res, next) => {
     Object.assign(db.list.items.find(item => item.id == req.params.id), req.body);
 
     return res.json(db.list);
-});
+}));
 
-app.post('/list/item/:id/complete', async (req, res, next) => {
+app.post('/list/item/:id/complete', asyncWrapper(async (req, res, next) => {
     const item = db.list.items.find(item => item.id == req.params.id);
     item.status = 'completed';
     
     return res.json(db.list);
-});
+}));
 
-app.post('/list/item/:id/open', async (req, res, next) => {
+app.post('/list/item/:id/open', asyncWrapper(async (req, res, next) => {
     const item = db.list.items.find(item => item.id == req.params.id);
     item.status = 'open';
     
     return res.json(db.list);
-});
+}));
 
-app.post('/list/clear', async (req, res, next) => {
+app.post('/list/clear', asyncWrapper(async (req, res, next) => {
     db.list.items = [];
     
     return res.json(db.list);
-});
+}));
 
-app.delete('/list/delete-completed-items', async (req, res, next) => {
+app.delete('/list/delete-completed-items', asyncWrapper(async (req, res, next) => {
     db.list.items = db.list.items.filter(item => item.status != 'completed');
     
     return res.json(db.list);
-});
+}));
 
-app.post('/list/show-completed-items/:show', async (req, res, next) => {
+app.post('/list/show-completed-items/:show', asyncWrapper(async (req, res, next) => {
     db.list.showCompletedItems = req.params.show == 'true';
     
     return res.json({ success: true });
-});
+}));
 
-app.post('/menu', async (req, res, next) => {
+app.get('/menu', asyncWrapper(async (req, res) => {
+    try {
+      res.json(db.menu);
+    } catch (error) {
+      res.status(500).json({ message: 'Error fetching menu' });
+    }
+}));
+
+app.post('/menu', asyncWrapper(async (req, res, next) => {
     const { ingredients } = req.body;
 
     // Build ingredient list
@@ -115,10 +135,24 @@ app.post('/menu', async (req, res, next) => {
         db.list.items.push(item);
     }
 
-    // console.log('Missing ingredients: ', listIngredients.filter(ingredient => !vendors[ingredient.name]).map(ingredient => ({ name: ingredient.name, vendor: '' })));
+    // Add missing ingredients to ingredient list (with empty vendor)
+    db.menu.ingredients.push(...listIngredients.filter(ingredient => !vendors[ingredient.name]).map(ingredient => ({ name: ingredient.name, vendor: '' })));
 
-    return res.json(db.list);
-});
+    return res.json({ list: db.list, menu: db.menu });
+}));
+
+app.put('/menu/dish/:id', asyncWrapper(async (req, res, next) => {
+    Object.assign(db.menu.dishes.find(dish => dish.id == req.params.id), req.body);
+
+    return res.json(req.body);
+}));
+
+app.put('/menu/vendors', asyncWrapper(async (req, res, next) => {
+    db.menu.ingredients = req.body;
+
+    return res.json(db.menu.ingredients);
+}));
+
 
 const addAmountToList = (list, amount) => {
     if (amount.unit == null) {

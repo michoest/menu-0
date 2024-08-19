@@ -1,5 +1,5 @@
 <template>
-  <q-dialog v-model="show" position="bottom" @before-show="initInputs" @hide="clearInputs">
+  <q-dialog v-model="show" position="bottom" @hide="clearInputs">
       <q-card style="width: 350px" class="q-px-md">
           <q-card-section>
               <div class="q-px-md">
@@ -48,7 +48,7 @@ const clearInputs = () => {
 
 const onClickSave = () => {
   show.value = false;
-  
+
   if (ingredient.value.amount.value == '' && ingredient.value.amount.unit == '') {
       ingredient.value.amount = { value: null, unit: null };
   }

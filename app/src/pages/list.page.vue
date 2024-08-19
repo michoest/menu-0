@@ -26,11 +26,11 @@
         <q-icon color="positive" name="done" size="104px" class="q-pa-xl" />
     </div>
 
-    <q-page-sticky position="bottom" :offset="[0, 18]" style="z-index: 6000;">
+    <q-page-sticky position="bottom" :offset="[0, -28]" style="z-index: 6000;">
       <q-btn fab icon="add" color="accent" @click="onClickAddItem" />
     </q-page-sticky>
 
-    <q-page-sticky position="bottom-right" :offset="[26, 26]">
+    <q-page-sticky position="bottom-right" :offset="[18, 18]">
         <q-fab color="primary" icon="more_vert" direction="up" padding="sm">
             <q-fab-action @click="onClickDeleteCompletedItems" icon="remove_done" external-label label-position="left" label="Delete completed items" />
             <q-fab-action @click="onClickClearList" :disable="items.length == 0" icon="delete_sweep" external-label label-position="left" label="Clear all" />

@@ -1,6 +1,14 @@
 {
   "list": {
-    "items": [],
+    "items": [
+      {
+        "id": "b22f127a-4c5b-4b91-bdee-ec83757f156f",
+        "name": "Ner",
+        "category": "Nerladen",
+        "notes": "1 ",
+        "status": "open"
+      }
+    ],
     "showCompletedItems": false
   },
   "menu": {
@@ -3116,189 +3124,29 @@
             "optional": true
           }
         ],
-        "standardAmount": 2,
+        "standardAmount": "4",
         "id": "cbe06bde-0302-4f4d-80f9-f33741b41928"
       }
     ],
     "ingredients": [
       {
-        "name": "Cado",
-        "vendor": "We"
-      },
-      {
-        "name": "Tailmaten",
-        "vendor": "We"
-      },
-      {
-        "name": "Wiebels",
-        "vendor": "Markt (Toffeltand)"
-      },
-      {
-        "name": "Ke",
-        "vendor": "We"
-      },
-      {
-        "name": "Gelbe Rika",
-        "vendor": "Markt (Müsetand)"
-      },
-      {
-        "name": "Feta",
-        "vendor": "We (Käse)"
-      },
-      {
-        "name": "Nienkerns",
-        "vendor": "Online"
-      },
-      {
-        "name": "Salz",
-        "vendor": "We"
-      },
-      {
-        "name": "Feffer",
-        "vendor": "Online"
-      },
-      {
-        "name": "Tronensaft",
-        "vendor": "We"
-      },
-      {
-        "name": "Nittlauch",
-        "vendor": "Markt (Müsetand)"
-      },
-      {
-        "name": "Samicoreme",
-        "vendor": "We"
-      },
-      {
-        "name": "Zucker",
-        "vendor": "We"
-      },
-      {
-        "name": "Lat",
-        "vendor": "Markt (Müsetand)"
-      },
-      {
-        "name": "Leisch",
-        "vendor": "Markt (Metzger)"
-      },
-      {
-        "name": "Leisch (nach Belieben)",
-        "vendor": "Markt (Metzger)"
-      },
-      {
-        "name": "Livenöl",
-        "vendor": "Online"
+        "name": "Bis",
+        "vendor": "We (Obst & Müse)"
       },
       {
         "name": "Blauch",
         "vendor": "Markt (Toffeltand)"
       },
       {
-        "name": "Körnerruste",
-        "vendor": "Markt (Zeit für Rot)"
-      },
-      {
-        "name": "Nig",
-        "vendor": "We"
-      },
-      {
-        "name": "Ferlocken",
-        "vendor": "We"
-      },
-      {
-        "name": "Sinen",
-        "vendor": "We"
-      },
-      {
-        "name": "Nnenlumenkerns",
-        "vendor": "We"
-      },
-      {
-        "name": "Kaonibs",
-        "vendor": "Natura"
-      },
-      {
-        "name": "Koslakes",
-        "vendor": "Natura"
-      },
-      {
-        "name": "Leinsams",
-        "vendor": "We"
-      },
-      {
-        "name": "Gehacktes Dels",
-        "vendor": "We"
-      },
-      {
-        "name": "Pfel",
-        "vendor": "We"
-      },
-      {
-        "name": "Nane",
+        "name": "Bohnenraut",
         "vendor": "Markt (Müsetand)"
       },
       {
-        "name": "Erdbeers",
-        "vendor": "Markt (Müsetand)"
-      },
-      {
-        "name": "Dels",
-        "vendor": "We"
-      },
-      {
-        "name": "Pignons",
-        "vendor": "Markt (Müsetand)"
-      },
-      {
-        "name": "Sahne",
+        "name": "Butter",
         "vendor": "We (Milchdukts)"
       },
       {
-        "name": "Weißwein",
-        "vendor": "We"
-      },
-      {
-        "name": "Silie",
-        "vendor": "Markt (Müsetand)"
-      },
-      {
-        "name": "Lilocken",
-        "vendor": "We"
-      },
-      {
-        "name": "Rrata",
-        "vendor": "We (Käse)"
-      },
-      {
-        "name": "Kelhuhn",
-        "vendor": "Kelhuhnladen"
-      },
-      {
-        "name": "Toffellat",
-        "vendor": "Kelhuhnladen"
-      },
-      {
-        "name": "Rautlat",
-        "vendor": "Kelhuhnladen"
-      },
-      {
-        "name": "Rot",
-        "vendor": "Bäcker"
-      },
-      {
-        "name": "Laträuter",
-        "vendor": "Online"
-      },
-      {
-        "name": "Saures Sahne",
-        "vendor": "We (Milchdukts)"
-      },
-      {
-        "name": "Sonnenlumenöl",
-        "vendor": "We"
-      },
-      {
-        "name": "Essig",
+        "name": "Cado",
         "vendor": "We"
       },
       {
@@ -3310,211 +3158,7 @@
         "vendor": "Markt (Müsetand)"
       },
       {
-        "name": "Pfelessig",
-        "vendor": "We"
-      },
-      {
-        "name": "Senf",
-        "vendor": "We"
-      },
-      {
-        "name": "Radicchio",
-        "vendor": "Markt (Müsetand)"
-      },
-      {
-        "name": "Dill",
-        "vendor": "Markt (Müsetand)"
-      },
-      {
-        "name": "Minze",
-        "vendor": "Markt (Müsetand)"
-      },
-      {
-        "name": "Tronenmelisse",
-        "vendor": "Markt (Müsetand)"
-      },
-      {
-        "name": "Himbeers",
-        "vendor": "Markt (Müsetand)"
-      },
-      {
-        "name": "Weißes Samico",
-        "vendor": "We"
-      },
-      {
-        "name": "Öl",
-        "vendor": "We"
-      },
-      {
-        "name": "Ziegenkäse (Rolle)",
-        "vendor": "We (Käse)"
-      },
-      {
-        "name": "Sottoreis",
-        "vendor": "We"
-      },
-      {
-        "name": "Müserühe",
-        "vendor": "We"
-      },
-      {
-        "name": "Rella",
-        "vendor": "We (Käse)"
-      },
-      {
-        "name": "Mesan",
-        "vendor": "We (Käse)"
-      },
-      {
-        "name": "Rianderpulver",
-        "vendor": "We"
-      },
-      {
-        "name": "Maten",
-        "vendor": "We"
-      },
-      {
-        "name": "Mazola",
-        "vendor": "We"
-      },
-      {
-        "name": "Räuteressig",
-        "vendor": "We"
-      },
-      {
-        "name": "Regano",
-        "vendor": "Online"
-      },
-      {
-        "name": "Maggi",
-        "vendor": "We"
-      },
-      {
-        "name": "Butter",
-        "vendor": "We (Milchdukts)"
-      },
-      {
-        "name": "Melade",
-        "vendor": "We"
-      },
-      {
-        "name": "Ner",
-        "vendor": "Nerladen"
-      },
-      {
-        "name": "Hackleisch",
-        "vendor": ""
-      },
-      {
-        "name": "Rikapulver",
-        "vendor": "We"
-      },
-      {
-        "name": "Rika",
-        "vendor": "Markt (Müsetand)"
-      },
-      {
-        "name": "Reis",
-        "vendor": "We"
-      },
-      {
-        "name": "Matenmark",
-        "vendor": "We"
-      },
-      {
-        "name": "Passierte Maten",
-        "vendor": "We"
-      },
-      {
-        "name": "Rrytchup",
-        "vendor": "We"
-      },
-      {
-        "name": "Rüne Rika",
-        "vendor": "Markt (Müsetand)"
-      },
-      {
-        "name": "Rauchmaten",
-        "vendor": "Markt (Müsetand)"
-      },
-      {
-        "name": "Firsichs oder Tarinen",
-        "vendor": "Markt (Müsetand)"
-      },
-      {
-        "name": "Weißweinessig",
-        "vendor": "We"
-      },
-      {
-        "name": "Nig oder Hornsirup",
-        "vendor": "We"
-      },
-      {
-        "name": "Teak",
-        "vendor": "Markt (Metzger)"
-      },
-      {
-        "name": "Rillwurst",
-        "vendor": "Markt (Metzger)"
-      },
-      {
-        "name": "Lachs",
-        "vendor": "We"
-      },
-      {
-        "name": "Nelen",
-        "vendor": "We"
-      },
-      {
-        "name": "Guette",
-        "vendor": "Bäcker"
-      },
-      {
-        "name": "Ziegenkäse",
-        "vendor": "We (Käse)"
-      },
-      {
-        "name": "Marin",
-        "vendor": "Online"
-      },
-      {
-        "name": "Körniges Senf",
-        "vendor": "We"
-      },
-      {
-        "name": "Rote Bete",
-        "vendor": "Markt (Müsetand)"
-      },
-      {
-        "name": "Rauke",
-        "vendor": "Markt (Müsetand)"
-      },
-      {
         "name": "Cuja",
-        "vendor": "Markt (Müsetand)"
-      },
-      {
-        "name": "Käse",
-        "vendor": "Markt (Metzger)"
-      },
-      {
-        "name": "Tufo",
-        "vendor": "Markt (Metzger)"
-      },
-      {
-        "name": "Lami",
-        "vendor": "Markt (Metzger)"
-      },
-      {
-        "name": "Rustenraten",
-        "vendor": ""
-      },
-      {
-        "name": "Wi",
-        "vendor": "Markt (Müsetand)"
-      },
-      {
-        "name": "Tarine",
         "vendor": "Markt (Müsetand)"
       },
       {
@@ -3522,15 +3166,47 @@
         "vendor": "Markt (Müsetand)"
       },
       {
-        "name": "Rischkäse",
-        "vendor": "Markt (Fischkäse)"
+        "name": "Dels",
+        "vendor": "We"
       },
       {
-        "name": "Risch geresstes Rangensaft",
+        "name": "Dill",
         "vendor": "Markt (Müsetand)"
       },
       {
-        "name": "Raubs",
+        "name": "Eis in Röße M",
+        "vendor": "We"
+      },
+      {
+        "name": "Erdbeers",
+        "vendor": "Markt (Müsetand)"
+      },
+      {
+        "name": "Essig",
+        "vendor": "We"
+      },
+      {
+        "name": "Feffer",
+        "vendor": "Online"
+      },
+      {
+        "name": "Ferlocken",
+        "vendor": "We"
+      },
+      {
+        "name": "Feta",
+        "vendor": "We (Käse)"
+      },
+      {
+        "name": "Firsichs oder Tarinen",
+        "vendor": "Markt (Müsetand)"
+      },
+      {
+        "name": "Gehacktes Dels",
+        "vendor": "We"
+      },
+      {
+        "name": "Gelbe Rika",
         "vendor": "Markt (Müsetand)"
       },
       {
@@ -3538,15 +3214,131 @@
         "vendor": "We"
       },
       {
-        "name": "Rotwein",
+        "name": "Guette",
+        "vendor": "Bäcker"
+      },
+      {
+        "name": "Gwer",
+        "vendor": "Markt (Müsetand)"
+      },
+      {
+        "name": "Hackleisch",
+        "vendor": "Markt (Metzger)"
+      },
+      {
+        "name": "Himbeers",
+        "vendor": "Markt (Müsetand)"
+      },
+      {
+        "name": "Kaonibs",
+        "vendor": "Natura"
+      },
+      {
+        "name": "Käse",
+        "vendor": "Markt (Metzger)"
+      },
+      {
+        "name": "Ke",
         "vendor": "We"
+      },
+      {
+        "name": "Kelhuhn",
+        "vendor": "Kelhuhnladen"
+      },
+      {
+        "name": "Körnerruste",
+        "vendor": "Markt (Zeit für Rot)"
+      },
+      {
+        "name": "Körniges Senf",
+        "vendor": "We"
+      },
+      {
+        "name": "Koslakes",
+        "vendor": "Natura"
+      },
+      {
+        "name": "Kosmilch",
+        "vendor": "We"
+      },
+      {
+        "name": "Lachs",
+        "vendor": "We"
+      },
+      {
+        "name": "Lami",
+        "vendor": "Markt (Metzger)"
+      },
+      {
+        "name": "Lat",
+        "vendor": "Markt (Müsetand)"
+      },
+      {
+        "name": "Laträuter",
+        "vendor": "Online"
+      },
+      {
+        "name": "Leinsams",
+        "vendor": "We"
+      },
+      {
+        "name": "Leisch",
+        "vendor": "Markt (Metzger)"
+      },
+      {
+        "name": "Leisch (nach Belieben)",
+        "vendor": "Markt (Metzger)"
+      },
+      {
+        "name": "Lilocken",
+        "vendor": "We"
+      },
+      {
+        "name": "Livenöl",
+        "vendor": "Online"
+      },
+      {
+        "name": "Maggi",
+        "vendor": "We"
+      },
+      {
+        "name": "Marin",
+        "vendor": "Online"
+      },
+      {
+        "name": "Maten",
+        "vendor": "We"
+      },
+      {
+        "name": "Matenmark",
+        "vendor": "We"
+      },
+      {
+        "name": "Mazola",
+        "vendor": "We"
+      },
+      {
+        "name": "Mehl",
+        "vendor": "We"
+      },
+      {
+        "name": "Melade",
+        "vendor": "We"
+      },
+      {
+        "name": "Mesan",
+        "vendor": "We (Käse)"
       },
       {
         "name": "Milch",
         "vendor": "We (Milchdukts)"
       },
       {
-        "name": "Mehl",
+        "name": "Minze",
+        "vendor": "Markt (Müsetand)"
+      },
+      {
+        "name": "Müserühe",
         "vendor": "We"
       },
       {
@@ -3554,40 +3346,92 @@
         "vendor": "We"
       },
       {
-        "name": "Sagnelatten",
+        "name": "Nane",
+        "vendor": "Markt (Müsetand)"
+      },
+      {
+        "name": "Nelen",
         "vendor": "We"
       },
       {
-        "name": "Reukäse",
+        "name": "Ner",
+        "vendor": "Nerladen"
+      },
+      {
+        "name": "Nienkerns",
+        "vendor": "Online"
+      },
+      {
+        "name": "Nig",
+        "vendor": "We"
+      },
+      {
+        "name": "Nig oder Hornsirup",
+        "vendor": "We"
+      },
+      {
+        "name": "Nittlauch",
+        "vendor": "Markt (Müsetand)"
+      },
+      {
+        "name": "Nnenlumenkerns",
+        "vendor": "We"
+      },
+      {
+        "name": "Öl",
+        "vendor": "We"
+      },
+      {
+        "name": "Passierte Maten",
+        "vendor": "We"
+      },
+      {
+        "name": "Pfel",
+        "vendor": "We"
+      },
+      {
+        "name": "Pfelessig",
+        "vendor": "We"
+      },
+      {
+        "name": "Pignons",
+        "vendor": "Markt (Müsetand)"
+      },
+      {
+        "name": "Radicchio",
+        "vendor": "Markt (Müsetand)"
+      },
+      {
+        "name": "Raubs",
+        "vendor": "Markt (Müsetand)"
+      },
+      {
+        "name": "Rauchmaten",
+        "vendor": "Markt (Müsetand)"
+      },
+      {
+        "name": "Rauke",
+        "vendor": "Markt (Müsetand)"
+      },
+      {
+        "name": "Räuteressig",
+        "vendor": "We"
+      },
+      {
+        "name": "Rautlat",
+        "vendor": "Kelhuhnladen"
+      },
+      {
+        "name": "Regano",
+        "vendor": "Online"
+      },
+      {
+        "name": "Reis",
+        "vendor": "We"
+      },
+      {
+        "name": "Rella",
         "vendor": "We (Käse)"
-      },
-      {
-        "name": "Eis in Röße M",
-        "vendor": "We"
-      },
-      {
-        "name": "Wasser",
-        "vendor": "We"
-      },
-      {
-        "name": "Rote Wiebels",
-        "vendor": "Markt (Toffeltand)"
-      },
-      {
-        "name": "Silikum",
-        "vendor": "Markt (Müsetand)"
-      },
-      {
-        "name": "Bis",
-        "vendor": "We"
-      },
-      {
-        "name": "Schalotten",
-        "vendor": "Markt (Müsetand)"
-      },
-      {
-        "name": "Rühlingswiebels",
-        "vendor": "Markt (Müsetand)"
       },
       {
         "name": "Reme raiche",
@@ -3598,32 +3442,196 @@
         "vendor": "Markt (Müsetand)"
       },
       {
-        "name": "Rotten",
-        "vendor": "Markt (Müsetand)"
+        "name": "Reukäse",
+        "vendor": "We (Käse)"
       },
       {
-        "name": "Toffels",
-        "vendor": "Markt (Toffeltand)"
-      },
-      {
-        "name": "Gwer",
-        "vendor": "Markt (Müsetand)"
-      },
-      {
-        "name": "Kosmilch",
+        "name": "Rianderpulver",
         "vendor": "We"
+      },
+      {
+        "name": "Rika",
+        "vendor": "Markt (Müsetand)"
+      },
+      {
+        "name": "Rikapulver",
+        "vendor": "We"
+      },
+      {
+        "name": "Rillwurst",
+        "vendor": "Markt (Metzger)"
+      },
+      {
+        "name": "Risch geresstes Rangensaft",
+        "vendor": "Markt (Müsetand)"
+      },
+      {
+        "name": "Rischkäse",
+        "vendor": "Markt (Rischkäsetand)"
+      },
+      {
+        "name": "Rot",
+        "vendor": "Bäcker"
+      },
+      {
+        "name": "Rote Bete",
+        "vendor": "Markt (Müsetand)"
+      },
+      {
+        "name": "Rote Wiebels",
+        "vendor": "Markt (Toffeltand)"
       },
       {
         "name": "Rotes Currypaste",
         "vendor": "We"
       },
       {
+        "name": "Rotten",
+        "vendor": "Markt (Müsetand)"
+      },
+      {
+        "name": "Rotwein",
+        "vendor": "We"
+      },
+      {
+        "name": "Rrata",
+        "vendor": "We (Käse)"
+      },
+      {
+        "name": "Rrytchup",
+        "vendor": "We"
+      },
+      {
+        "name": "Rühlingswiebels",
+        "vendor": "Markt (Müsetand)"
+      },
+      {
         "name": "Rüne Bohnen",
         "vendor": "Markt (Müsetand)"
       },
       {
-        "name": "Bohnenraut",
+        "name": "Rüne Rika",
         "vendor": "Markt (Müsetand)"
+      },
+      {
+        "name": "Rustenraten",
+        "vendor": "Markt (Metzger)"
+      },
+      {
+        "name": "Sagnelatten",
+        "vendor": "We"
+      },
+      {
+        "name": "Sahne",
+        "vendor": "We (Milchdukts)"
+      },
+      {
+        "name": "Salz",
+        "vendor": "We"
+      },
+      {
+        "name": "Samicoreme",
+        "vendor": "We"
+      },
+      {
+        "name": "Saures Sahne",
+        "vendor": "We (Milchdukts)"
+      },
+      {
+        "name": "Schalotten",
+        "vendor": "Markt (Müsetand)"
+      },
+      {
+        "name": "Senf",
+        "vendor": "We"
+      },
+      {
+        "name": "Silie",
+        "vendor": "Markt (Müsetand)"
+      },
+      {
+        "name": "Silikum",
+        "vendor": "Markt (Müsetand)"
+      },
+      {
+        "name": "Sinen",
+        "vendor": "We"
+      },
+      {
+        "name": "Sonnenlumenöl",
+        "vendor": "We"
+      },
+      {
+        "name": "Sottoreis",
+        "vendor": "We"
+      },
+      {
+        "name": "Tailmaten",
+        "vendor": "We"
+      },
+      {
+        "name": "Tarine",
+        "vendor": "Markt (Müsetand)"
+      },
+      {
+        "name": "Teak",
+        "vendor": "Markt (Metzger)"
+      },
+      {
+        "name": "Toffellat",
+        "vendor": "Kelhuhnladen"
+      },
+      {
+        "name": "Toffels",
+        "vendor": "Markt (Toffeltand)"
+      },
+      {
+        "name": "Tronenmelisse",
+        "vendor": "Markt (Müsetand)"
+      },
+      {
+        "name": "Tronensaft",
+        "vendor": "We"
+      },
+      {
+        "name": "Tufo",
+        "vendor": "Markt (Metzger)"
+      },
+      {
+        "name": "Wasser",
+        "vendor": "We"
+      },
+      {
+        "name": "Weißes Samico",
+        "vendor": "We"
+      },
+      {
+        "name": "Weißwein",
+        "vendor": "We"
+      },
+      {
+        "name": "Weißweinessig",
+        "vendor": "We"
+      },
+      {
+        "name": "Wi",
+        "vendor": "Markt (Müsetand)"
+      },
+      {
+        "name": "Wiebels",
+        "vendor": "Markt (Toffeltand)"
+      },
+      {
+        "name": "Ziegenkäse",
+        "vendor": "We (Käse)"
+      },
+      {
+        "name": "Ziegenkäse (Rolle)",
+        "vendor": "We (Käse)"
+      },
+      {
+        "name": "Zucker",
+        "vendor": "We"
       }
     ]
   }

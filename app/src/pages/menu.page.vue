@@ -137,16 +137,20 @@ const filteredDishes = computed(() => {
 });
 
 const ingredientToString = (ingredient) => {
-    if (ingredient.amount.unit == null) {
-        return ingredient.name;
-    }
-    else {
-        if (ingredient.amount.unit == '') {
-            return `${ingredient.amount.value} ${ingredient.name}`;
-        }
-        else {
-            return `${ingredient.amount.value} ${ingredient.amount.unit} ${ingredient.name}`;
-        }
-    }
+  let result = ingredient.optional ? '[optional] ' : '';
+
+  if (ingredient.amount.unit == null) {
+    result += ingredient.name;
+  }
+  else {
+      if (ingredient.amount.unit == '') {
+        result += `${ingredient.amount.value} ${ingredient.name}`;
+      }
+      else {
+        result += `${ingredient.amount.value} ${ingredient.amount.unit} ${ingredient.name}`;
+      }
+  }
+
+  return result;
 };
 </script>

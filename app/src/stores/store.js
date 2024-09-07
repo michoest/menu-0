@@ -9,8 +9,8 @@ export const useStore = defineStore('store', {
     user: 'roßes',
     list: { items: [], showCompletedItems: false },
     menu: { dishes: [], ingredients: [] },
-    // api: 'https://menu.server.michoest.com',
-    api: 'http://localhost:3001'
+    api: 'https://menu-0.server.michoest.com',
+    // api: 'http://localhost:3001'
   }),
   getters: {
 

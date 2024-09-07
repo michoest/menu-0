@@ -12,5 +12,8 @@
     "helmet": "^7.1.0",
     "lodash": "^4.17.21",
     "uuid": "^10.0.0"
+  },
+  "scripts": {
+    "dev": "nodemon api.js"
   }
 }

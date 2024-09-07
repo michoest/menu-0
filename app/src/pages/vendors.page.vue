@@ -2,11 +2,12 @@
   <q-page>
     <q-list v-if="ingredients.length > 0" class="q-pt-md">
       <q-item class="flex justify-center">
-          <q-input v-model="search" standout rounded dense clearable placeholder="Suchen" style="width: 60%; min-width: 300px;">
-              <template v-slot:prepend>
-                  <q-icon name="search" />
-              </template>
-          </q-input>
+        <q-input v-model="search" standout rounded dense clearable placeholder="Suchen"
+          style="width: 60%; min-width: 300px;">
+          <template v-slot:prepend>
+            <q-icon name="search" />
+          </template>
+        </q-input>
       </q-item>
 
       <q-item v-for="ingredient, index in filteredIngredients" :key="ingredient">
@@ -24,7 +25,8 @@
         </q-item-section>
 
         <q-item-section side>
-          <q-btn flat dense round color="negative" icon="delete_outline" @click="onClickRemoveIngredient(index)"></q-btn>
+          <q-btn flat dense round color="negative" icon="delete_outline"
+            @click="onClickRemoveIngredient(index)"></q-btn>
         </q-item-section>
       </q-item>
       <q-item clickable @click="onClickAddIngredient">
@@ -58,7 +60,24 @@ const store = useStore();
 
 const ingredients = ref([]);
 
-const vendors = ['Markt (Käse)', 'Markt (Metzger)', 'Markt (Müsetand)', 'Markt (Rischkäsetand)', 'Markt (Toffeltand)', 'Markt (Zeit für Rot)', 'Mazon', 'Natura', 'Nette', 'Online', 'We', 'We (Obst & Müse)', 'We (Milchdukts)', 'We (Käse)', 'Kelhuhnladen', 'Nerladen', ].sort();
+const vendors = [
+  'Markt (Käse)',
+  'Markt (Metzger)',
+  'Markt (Müsetand)',
+  'Markt (Rischkäsetand)',
+  'Markt (Toffeltand)',
+  'Markt (Zeit für Rot)',
+  'Mazon',
+  'Natura',
+  'Nette',
+  'Online',
+  'We',
+  'We (Obst & Müse)',
+  'We (Milchdukts)',
+  'We (Käse)',
+  'We (Tränks)',
+  'Kelhuhnladen',
+  'Nerladen',].sort();
 
 onMounted(async () => {
   await store.fetchMenu();

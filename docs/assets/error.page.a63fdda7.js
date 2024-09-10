@@ -1,0 +1,1 @@
+import{Q as e}from"./QPage.9706d32d.js";import{H as r,I as a,J as t,aN as o}from"./index.89d78511.js";const f=Object.assign({name:"ErrorPage"},{__name:"error.page",setup(s){return(c,n)=>(r(),a(e,{class:"flex flex-center"},{default:t(()=>[o(" Error! ")]),_:1}))}});export{f as default};

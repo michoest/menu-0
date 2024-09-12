@@ -1,25 +1,22 @@
 <template>
-  <q-page :class="{ flex: categories.length == 0, 'flex-center': categories.length == 0 }">
+  <q-header class="q-my-sm bg-white text-primary">
+    <q-toolbar>
+      <q-toolbar-title class="text-center text-weight-bold">
+        Shopping List
+      </q-toolbar-title>
+    </q-toolbar>
+    <q-separator />
+  </q-header>
+
+  <q-page v-if="store.status == 'loading'" class="flex flex-center">
+    <q-spinner-dots color="primary" size="xl" />
+  </q-page>
+
+  <q-page v-else :class="{ flex: categories.length == 0, 'flex-center': categories.length == 0 }">
     <q-list v-if="categories.length > 0" class="q-pt-md">
       <template v-for="category, index in categories" :key="index">
         <q-separator v-if="index > 0" inset />
         <q-item-label header>{{ category.title || '(Keine Kategorie)' }}</q-item-label>
-        <!-- <q-item v-for="item in category.items" :key="item.id">
-              <q-item-section side top>
-                <q-btn v-if="item.status == 'open'" size="12px" flat dense round icon="radio_button_unchecked"
-                    @click="onClickCompleteItem(item)" />
-                <q-btn v-else-if="['almost-completed', 'completed'].includes(item.status)" size="12px" flat dense
-                    round icon="done" @click="onClickOpenItem(item)" />
-              </q-item-section>
-
-              <q-item-section @click="onClickEditItem(item)">
-                <q-item-label>
-                  {{ item.name }}
-                  <q-badge v-if="item.due" class="q-mx-sm" color="accent">{{ dayjs(item.due).fromNow() }}</q-badge>
-                </q-item-label>
-                <q-item-label caption>{{ item.notes }}</q-item-label>
-              </q-item-section>
-            </q-item> -->
         <draggable :data-category="category.title" :list="category.items" item-key="id" group="items" :sort="false"
           @end="onDragEnd" handle=".q-icon">
           <template #item="{ element: item }">
@@ -47,32 +44,8 @@
           </template>
         </draggable>
       </template>
+      <q-item></q-item>
     </q-list>
-    <!-- <draggable v-if="categories.length > 0" class="q-pt-md" :list="categories" filter=".category-header"
-      item-key="title" @start="onDragStart" @end="onDragEnd" @move="onDragMove">
-      <template #item="{ element: category, index }">
-        <div>
-          <q-separator v-if="index > 0" class="category-header" inset />
-          <q-item-label class="category-header" header>{{ category.title || '(Keine Kategorie)' }}</q-item-label>
-          <q-item v-for="item in category.items" :key="item.id">
-            <q-item-section side top>
-              <q-btn v-if="item.status == 'open'" size="12px" flat dense round icon="radio_button_unchecked"
-                @click="onClickCompleteItem(item)" />
-              <q-btn v-else-if="['almost-completed', 'completed'].includes(item.status)" size="12px" flat dense round
-                icon="done" @click="onClickOpenItem(item)" />
-            </q-item-section>
-
-            <q-item-section @click="onClickEditItem(item)">
-              <q-item-label>
-                {{ item.name }}
-                <q-badge v-if="item.due" class="q-mx-sm" color="accent">{{ dayjs(item.due).fromNow() }}</q-badge>
-              </q-item-label>
-              <q-item-label caption>{{ item.notes }}</q-item-label>
-            </q-item-section>
-          </q-item>
-        </div>
-      </template>
-    </draggable> -->
     <div v-else class="flex justify-center">
       <q-icon color="positive" name="done" size="104px" class="q-pa-xl" />
     </div>
@@ -95,7 +68,6 @@
 
     <AddItemDialog v-model="addItemDialog.show" @add="onClickAddItemDialogAdd" />
     <EditItemDialog v-model="editItemDialog.show" :item="editItemDialog.item" @save="onClickSaveItem" />
-
   </q-page>
 </template>
 
@@ -103,7 +75,6 @@
 defineOptions({ name: 'ListPage' });
 
 import { ref, onMounted, computed, inject } from 'vue'
-import { useQuasar } from 'quasar'
 import dayjs from 'dayjs';
 import relativeTime from 'dayjs/plugin/relativeTime';
 dayjs.extend(relativeTime);

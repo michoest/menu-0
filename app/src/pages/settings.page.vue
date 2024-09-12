@@ -1,4 +1,13 @@
 <template>
+  <q-header class="q-my-sm bg-white text-primary">
+    <q-toolbar>
+      <q-toolbar-title class="text-center text-weight-bold">
+        Settings
+      </q-toolbar-title>
+    </q-toolbar>
+    <q-separator />
+  </q-header>
+
   <q-page>
     <q-list class="q-pt-md">
       <q-item-label header>Backend</q-item-label>
@@ -6,7 +15,9 @@
         <q-item-section>
           <q-input v-model="store.api" placeholder="API URL">
             <template v-slot:append>
-              <q-btn round dense flat icon="network_check" :color="apiStatus ? 'positive' : 'negative'" @click="checkAPI" />
+              <!-- <q-icon v-if="loading" name="loading" /> -->
+              <q-spinner-dots v-if="loading" color="primary" size="sm" />
+              <q-btn v-else round dense flat icon="network_check" :color="apiStatus ? 'positive' : 'negative'" @click="checkAPI" />
             </template>
           </q-input>
         </q-item-section>
@@ -53,10 +64,13 @@ import { useStore } from 'src/stores/store';
 
 const store = useStore();
 
+const loading = ref(true);
 const apiStatus = ref(false);
 
 const checkAPI = async () => {
+  loading.value = true;
   apiStatus.value = await store.checkAPI();
+  loading.value = false;
 };
 
 const user = {
@@ -77,5 +91,6 @@ const onClickSignout = async () => {
 
 onMounted(async () => {
   await checkAPI();
+  loading.value = false;
 });
 </script>

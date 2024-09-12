@@ -6,6 +6,7 @@ import { notify } from 'boot/notify';
 
 export const useStore = defineStore('store', {
   state: () => ({
+    status: 'ok',
     user: 'roßes',
     list: { items: [], showCompletedItems: false },
     menu: { dishes: [], ingredients: [] },
@@ -18,8 +19,12 @@ export const useStore = defineStore('store', {
   actions: {
     async fetchList() {
       try {
+        this.status = 'loading';
+
         const response = await axios.get(`${this.api}/list`);
-          this.list = response.data;
+        this.list = response.data;
+
+        this.status = 'ok';
       }
       catch (err) {
         notify(`Error: ${err}`, { type: 'negative' });
@@ -27,8 +32,12 @@ export const useStore = defineStore('store', {
     },
     async fetchMenu() {
       try {
+        this.status = 'loading';
+
         const response = await axios.get(`${this.api}/menu`);
-          this.menu = response.data;
+        this.menu = response.data;
+
+        this.status = 'ok';
       }
       catch (err) {
         notify(`Error: ${err}`, { type: 'negative' });
@@ -40,7 +49,6 @@ export const useStore = defineStore('store', {
           this.list = response.data.list;
 
           return response.data.id;
-
       }
       catch (err) {
         notify(`Error: ${err}`, { type: 'negative' });

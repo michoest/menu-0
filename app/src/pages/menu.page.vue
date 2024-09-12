@@ -1,5 +1,18 @@
 <template>
-  <q-page>
+  <q-header class="q-py-sm bg-white text-primary">
+    <q-toolbar>
+      <q-toolbar-title class="text-center text-weight-bold">
+        Menu
+      </q-toolbar-title>
+    </q-toolbar>
+    <q-separator />
+  </q-header>
+
+  <q-page v-if="store.status == 'loading'" class="flex flex-center">
+    <q-spinner-dots color="primary" size="xl" />
+  </q-page>
+
+  <q-page v-else>
     <q-list v-if="dishes.length > 0" class="q-pt-md">
       <q-item class="flex justify-center">
                 <q-input v-model="search" standout rounded dense clearable placeholder="Mmmmhhhes Schompf" style="width: 60%; min-width: 300px;">

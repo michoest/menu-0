@@ -4,14 +4,14 @@
           <q-card-section>
               <div class="q-px-md">
                   <div class="q-gutter-y-xs column">
-                      <q-input class="text-body1" borderless v-model="item.name" dense placeholder="Title" autofocus @keyup.enter="onClickSave" />
-                      <q-input v-show="showFields.notes" borderless v-model="item.notes" dense placeholder="Notes" @keyup.enter="onClickSave">
+                      <q-input class="text-body1" :ref="el => inputFields.name = el" borderless v-model="item.name" dense placeholder="Title" autofocus @keyup.enter="onClickSave" />
+                      <q-input v-show="showFields.notes" :ref="el => inputFields.notes = el" borderless v-model="item.notes" dense placeholder="Notes" @keyup.enter="onClickSave">
                           <template v-slot:prepend><q-icon size="xs" name="notes" /></template>
                       </q-input>
-                      <q-input v-show="showFields.category" borderless v-model="item.category" dense placeholder="Category" @keyup.enter="onClickSave">
+                      <q-input v-show="showFields.category" :ref="el => inputFields.category = el" borderless v-model="item.category" dense placeholder="Category" @keyup.enter="onClickSave">
                           <template v-slot:prepend><q-icon size="xs" name="category" /></template>
                       </q-input>
-                      <q-input v-show="showFields.due" borderless v-model="item.due" dense placeholder="Due" @keyup.enter="onClickSave">
+                      <q-input v-show="showFields.due" :ref="el => inputFields.due = el" borderless v-model="item.due" dense placeholder="Due" @keyup.enter="onClickSave">
                           <template v-slot:prepend><q-icon size="xs" name="alarm_on" /></template>
                           <template v-slot:append>
                               <q-icon size="sm" name="event" class="cursor-pointer">
@@ -42,7 +42,7 @@ const show = defineModel();
 const emit = defineEmits(['save']);
 const props = defineProps({ item: Object });
 
-import { ref, watch, computed } from 'vue';
+import { ref, watch, computed, nextTick } from 'vue';
 import _ from 'lodash';
 
 const item = ref(_.cloneDeep(props.item));
@@ -51,12 +51,22 @@ const showFields = ref({
   category: false,
   due: false
 });
+const inputFields = ref({
+  name: null,
+  notes: null,
+  category: null,
+  due: null
+});
 
 const onClickToggleShowNotes = () => {
   showFields.value.notes = !showFields.value.notes;
 
   if (!showFields.value.notes) {
       item.value.notes = '';
+      nextTick(() => inputFields.value.name.focus());
+  }
+  else {
+    nextTick(() => inputFields.value.notes.focus());
   }
 };
 
@@ -65,6 +75,10 @@ const onClickToggleShowCategory = () => {
 
   if (!showFields.value.category) {
       item.value.category = '';
+      nextTick(() => inputFields.value.name.focus());
+  }
+  else {
+    nextTick(() => inputFields.value.category.focus());
   }
 };
 
@@ -74,6 +88,10 @@ const onClickToggleShowDue = () => {
 
   if (!showFields.value.due) {
       item.value.due = null;
+      nextTick(() => inputFields.value.name.focus());
+  }
+  else {
+    nextTick(() => inputFields.value.due.focus());
   }
 };
 

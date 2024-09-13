@@ -87,6 +87,17 @@ export const useStore = defineStore('store', {
         notify(`Error: ${err}`, { type: 'negative' });
       }
     },
+    async deleteItem(itemId) {
+      try {
+        const response = await axios.delete(`${this.api}/list/item/${itemId}`);
+        this.list = response.data;
+
+        return true;
+      }
+      catch (err) {
+        notify(`Error: ${err}`, { type: 'negative' });
+      }
+    },
     async addToList(ingredients) {
       try {
         const response = await axios.post(`${this.api}/menu/`, { ingredients });

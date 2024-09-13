@@ -70,6 +70,11 @@ app.post('/list/item', asyncWrapper(async (req, res, next) => {
 
 app.put('/list/item/:id', asyncWrapper(async (req, res, next) => {
     Object.assign(db.list.items.find(item => item.id == req.params.id), req.body);
+    return res.json(db.list);
+}));
+
+app.delete('/list/item/:id', asyncWrapper(async (req, res, next) => {
+    _.remove(db.list, item => item.id == req.params.id);
 
     return res.json(db.list);
 }));

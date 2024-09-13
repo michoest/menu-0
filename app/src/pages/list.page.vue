@@ -67,7 +67,7 @@
     </q-page-sticky>
 
     <AddItemDialog v-model="addItemDialog.show" @add="onClickAddItemDialogAdd" />
-    <EditItemDialog v-model="editItemDialog.show" :item="editItemDialog.item" @save="onClickSaveItem" />
+    <EditItemDialog v-model="editItemDialog.show" :item="editItemDialog.item" @save="onClickSaveItem" @delete="onClickDeleteItem" />
   </q-page>
 </template>
 
@@ -152,8 +152,10 @@ const onClickSaveItem = async (item) => {
   $notify(`${item.name} edited!`);
 };
 
-const onClickItemActions = async (item) => {
+const onClickDeleteItem = async (item) => {
+  await store.deleteItem(item.id);
 
+  $notify(`${item.name} deleted!`, { actions: [{ label: 'Undo', color: 'white', handler: () => { store.addItem(item); } }] });
 };
 
 const onClickAddItemDialogAdd = async (item) => {

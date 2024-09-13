@@ -30,6 +30,7 @@
               <q-btn :color="showFields.category ? 'primary' : 'grey'" flat icon="category" size="sm" round @click="onClickToggleShowCategory" />
               <q-btn :color="showFields.due ? 'primary' : 'grey'" flat icon="alarm_on" size="sm" round @click="onClickToggleShowDue" />
               <q-space />
+              <q-btn color="negative" flat @click="onClickDelete">Delete</q-btn>
               <q-btn color="primary" :disable="!item.name" flat @click="onClickSave">Save</q-btn>
           </q-card-actions>
       </q-card>
@@ -39,7 +40,7 @@
 <script setup>
 defineOptions({ name: 'ListEditItemDialog' });
 const show = defineModel();
-const emit = defineEmits(['save']);
+const emit = defineEmits(['save', 'delete']);
 const props = defineProps({ item: Object });
 
 import { ref, watch, computed, nextTick } from 'vue';
@@ -98,6 +99,11 @@ const onClickToggleShowDue = () => {
 const onClickSave = () => {
   show.value = false;
   emit('save', _.cloneDeep(item.value));
+};
+
+const onClickDelete = () => {
+  show.value = false;
+  emit('delete', _.cloneDeep(item.value));
 };
 
 const initInputs = () => {

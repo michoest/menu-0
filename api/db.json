@@ -2,172 +2,223 @@
   "list": {
     "items": [
       {
-        "id": "394f5ad9-c6f3-4afd-9c0a-0f5443ac2347",
-        "name": "Toffels",
-        "category": "Markt (Toffeltand)",
-        "notes": "1000 g + 1 kg",
-        "status": "open"
+        "id": "758e93e7-1d94-4cf5-9e21-6ec561b5446d",
+        "status": "completed",
+        "name": "Bla",
+        "notes": "Test",
+        "category": "Markt",
+        "due": null
       },
       {
-        "id": "bd9740ac-0d1b-4a51-a65c-dffd646a9f7b",
-        "name": "Rühlingswak",
+        "id": "5dcdb3cd-907d-4a76-b4fe-e3152cb3aaed",
+        "status": "completed",
+        "name": "Lums",
+        "notes": "",
+        "category": "Markt",
+        "due": null
+      },
+      {
+        "id": "e40a9951-bb11-4555-b5b3-05451d4f19df",
+        "status": "completed",
+        "name": "lkj",
+        "notes": "",
         "category": "",
+        "due": "lkjh"
+      },
+      {
+        "id": "6e276c1a-40cc-42b9-b4ec-e70434a8eccd",
+        "status": "open",
+        "name": "Pfelschorle",
+        "notes": "",
+        "category": "We",
+        "due": null
+      },
+      {
+        "id": "28c60e3b-90d4-4b1e-9127-4386a0e9e297",
+        "status": "completed",
+        "name": "Butter ",
+        "notes": "",
+        "category": "",
+        "due": null
+      },
+      {
+        "id": "ee7eb955-fa6e-4471-8d55-f7002f0b721b",
+        "status": "completed",
+        "name": "Weißwein",
+        "notes": "",
+        "category": "",
+        "due": null
+      },
+      {
+        "id": "c51f938e-0eef-4769-b8d1-f4fab78902bd",
+        "status": "completed",
+        "name": "Mesan",
+        "notes": "",
+        "category": "",
+        "due": null
+      },
+      {
+        "id": "5523c0b1-f235-4e3f-8397-7c7369d96b88",
+        "status": "completed",
+        "name": "Nittlauch",
+        "notes": "",
+        "category": "Markt (Müsetand)",
+        "due": null
+      },
+      {
+        "id": "a863cd8f-469a-4955-aa54-3872e4735858",
+        "status": "completed",
+        "name": "Tailmaten",
+        "notes": "",
+        "category": "",
+        "due": null
+      },
+      {
+        "id": "8cd44cbb-3a39-4a31-b06d-290258868536",
+        "status": "completed",
+        "name": "Fifferlings",
+        "notes": "350 g",
+        "category": "Markt (Müsetand)",
+        "due": null
+      },
+      {
+        "id": "1e124d84-85fd-49ba-9ea3-9e9b8c742e93",
+        "status": "completed",
+        "name": "Milch",
+        "notes": "",
+        "category": "",
+        "due": null
+      },
+      {
+        "id": "4b282c2f-fc63-497d-8779-900781e879ff",
+        "status": "completed",
+        "name": "Rot",
+        "notes": "",
+        "category": "Nette",
+        "due": null
+      },
+      {
+        "id": "6d4cdc46-a755-4000-8337-9833a9115f7d",
+        "status": "completed",
+        "name": "Hackleisch",
+        "notes": "",
+        "category": "Markt (Metzger)",
+        "due": null
+      },
+      {
+        "id": "6d669f95-7d1c-465c-a4e1-1ce3dc52a189",
+        "status": "completed",
+        "name": "Kobons",
+        "notes": "",
+        "category": "We",
+        "due": null
+      },
+      {
+        "id": "fb632438-6d1f-4bda-82e3-8d806f83bb5d",
+        "status": "completed",
+        "name": "Lumpfs",
+        "notes": "",
+        "category": "We",
+        "due": null
+      },
+      {
+        "id": "1fc1f6a1-2e1f-41c2-8643-544484c7e7ba",
+        "status": "completed",
+        "name": "Damias",
+        "notes": "",
+        "category": "We",
+        "due": null
+      },
+      {
+        "id": "93d72425-b5d1-4243-9fbe-e7d42d413333",
+        "name": "Ccoli",
+        "category": "",
+        "notes": "2 ",
+        "status": "completed"
+      },
+      {
+        "id": "fa9a4b6b-f7f5-4180-be52-391a4fcb0a87",
+        "name": "Ccolitinpäckchen",
+        "category": "We",
         "notes": "2 ",
         "status": "open"
       },
       {
-        "id": "6d10e0e8-1712-4481-a012-c652b5d23e99",
-        "name": "Cado",
-        "category": "We",
-        "notes": "1 ",
-        "status": "open"
-      },
-      {
-        "id": "0f41db03-5c2b-4c53-8540-d27ca53a067a",
-        "name": "Tailmaten",
-        "category": "We",
-        "notes": "250 g",
-        "status": "open"
-      },
-      {
-        "id": "401a73c1-7284-4eaa-b47a-439bd57b5bc8",
-        "name": "Wiebels",
-        "category": "Markt (Toffeltand)",
-        "notes": "1 ",
-        "status": "open"
-      },
-      {
-        "id": "0e39834f-24e6-4733-a59b-5c6fa19724a7",
-        "name": "Ke",
-        "category": "We",
-        "notes": "0.5 ",
-        "status": "open"
-      },
-      {
-        "id": "50debbb5-e25f-403a-be6a-48cacbb040fe",
-        "name": "Gelbe Rika",
-        "category": "Markt (Müsetand)",
-        "notes": "0.5 ",
-        "status": "open"
-      },
-      {
-        "id": "94fcd8c5-8854-4081-b747-a085d0c674bb",
-        "name": "Feta",
-        "category": "We (Käse)",
-        "notes": "0.5 Packung",
-        "status": "open"
-      },
-      {
-        "id": "8dc42b72-4b9b-4e47-88ba-77817a6ef2ec",
-        "name": "Nienkerns",
-        "category": "Online",
-        "notes": "2 EL",
-        "status": "open"
-      },
-      {
-        "id": "5fd1583d-8692-49d2-9ec9-5c8742fe0334",
-        "name": "Feffer",
-        "category": "Online",
-        "notes": "",
-        "status": "open"
-      },
-      {
-        "id": "eb505f97-e23d-4fd4-bef6-19a5cc9a31a8",
-        "name": "Salz",
-        "category": "We",
-        "notes": "",
-        "status": "open"
-      },
-      {
-        "id": "05dc6a4c-4752-41d3-818b-a752269dbbd8",
-        "name": "Tronensaft",
-        "category": "We",
-        "notes": "",
-        "status": "open"
-      },
-      {
-        "id": "8cecd843-4a1f-49f8-bfa8-5ff5c227b511",
-        "name": "Nittlauch",
-        "category": "Markt (Müsetand)",
-        "notes": "",
-        "status": "open"
-      },
-      {
-        "id": "70400106-74cb-41d0-bbe1-69ac2588b376",
-        "name": "Samicoreme",
-        "category": "We",
-        "notes": "",
-        "status": "open"
-      },
-      {
-        "id": "8b806133-26bb-4a88-a94b-04665acd8a97",
-        "name": "Zucker",
-        "category": "We",
-        "notes": "",
-        "status": "open"
-      },
-      {
-        "id": "2eca5d3b-46a3-4081-8c2c-d855a32e2c8a",
-        "name": "Milch",
-        "category": "We (Milchdukts)",
-        "notes": "250 ml",
-        "status": "open"
-      },
-      {
-        "id": "c3231e3b-0131-44ce-a90e-583d0d3fa8a7",
-        "name": "Sahne",
-        "category": "We (Milchdukts)",
-        "notes": "250 ml",
-        "status": "open"
-      },
-      {
-        "id": "b58eacdc-fda7-4ff4-a364-73a9d5d25cbf",
-        "name": "Blauch",
-        "category": "Markt (Toffeltand)",
-        "notes": "2 Zehe",
-        "status": "open"
-      },
-      {
-        "id": "f5e7ab32-a89c-4e0c-814b-f10bc5c8582c",
-        "name": "Marin",
-        "category": "Online",
-        "notes": "",
-        "status": "open"
-      },
-      {
-        "id": "a856905b-6292-43c5-bce6-10f939aa49e7",
-        "name": "Butter",
-        "category": "We (Milchdukts)",
-        "notes": "",
-        "status": "open"
-      },
-      {
-        "id": "17252aab-93b7-41ef-a846-a61db2532d4e",
+        "id": "8ad05c9c-9f33-4cde-8bac-0157d3be73c9",
         "name": "Reukäse",
         "category": "We (Käse)",
         "notes": "200 g",
-        "status": "open"
+        "status": "completed"
       },
       {
-        "id": "b5b1d26f-0448-457b-800d-693e680b4a0a",
-        "name": "Xikanisches Fannenmüse",
-        "category": "",
-        "notes": "1 Packung",
-        "status": "open"
+        "id": "1de9ad87-fc1c-4a5c-a2bd-00fccc2276a6",
+        "name": "Gehacktes Dels",
+        "category": "We",
+        "notes": "",
+        "status": "completed"
       },
       {
-        "id": "db1d1e4f-0dec-4069-8861-67b7c4c94967",
-        "name": "Toffels",
-        "category": "Markt (Toffeltand)",
-        "notes": "500 g",
-        "status": "open"
+        "id": "8ae004eb-4966-408c-b71d-f4075b360ede",
+        "name": "Pfel",
+        "category": "We",
+        "notes": "0.5 ",
+        "status": "completed"
       },
       {
-        "id": "2f3d51c7-139c-4f9c-85c8-ba637a2f0689",
+        "id": "d5fc2d90-0d88-4e4d-b86b-7d99dc783f78",
+        "name": "Nane",
+        "category": "Markt (Müsetand)",
+        "notes": "1 ",
+        "status": "completed"
+      },
+      {
+        "id": "03a450d6-8a5d-495a-a6c9-9ffa42cbbb4b",
+        "name": "Rauchmaten",
+        "category": "Markt (Müsetand)",
+        "notes": "6 ",
+        "status": "completed"
+      },
+      {
+        "id": "50dc1633-5a76-433e-b1d8-09405f1ef413",
         "name": "Rella",
         "category": "We (Käse)",
-        "notes": "1 Kugel",
-        "status": "open"
+        "notes": "2 ",
+        "status": "completed"
+      },
+      {
+        "id": "e2a6069a-98c3-450a-9281-abda11abecd1",
+        "name": "Risches Silikum",
+        "category": "",
+        "notes": "",
+        "status": "completed"
+      },
+      {
+        "id": "ccf13199-53fe-409c-9820-033fb4956e85",
+        "name": "Wiebels",
+        "category": "Markt (Toffeltand)",
+        "notes": "1 ",
+        "status": "completed"
+      },
+      {
+        "id": "24be81b4-71f3-457a-89bd-54bd70489be8",
+        "name": "Gelbe Rika",
+        "category": "Markt (Müsetand)",
+        "notes": "1 ",
+        "status": "completed"
+      },
+      {
+        "id": "01193231-a57f-40fd-a497-cc91d38c2be5",
+        "name": "Rüne Rika",
+        "category": "Markt (Müsetand)",
+        "notes": "1 ",
+        "status": "completed"
+      },
+      {
+        "id": "3d1020f2-55b1-4284-bfee-83083f37e1ca",
+        "name": "Firsichs oder Tarinen",
+        "category": "Markt (Müsetand)",
+        "notes": "2 ",
+        "status": "completed"
       }
     ],
     "showCompletedItems": false
@@ -3356,7 +3407,7 @@
             "optional": true
           }
         ],
-        "standardAmount": "4",
+        "standardAmount": 4,
         "id": "cbe06bde-0302-4f4d-80f9-f33741b41928",
         "completed": true
       },
@@ -3388,7 +3439,7 @@
             "optional": true
           }
         ],
-        "standardAmount": "2",
+        "standardAmount": 2,
         "id": "39a872e2-5ef8-46e9-adaa-afaed493074c",
         "completed": true
       },
@@ -3449,7 +3500,7 @@
             "optional": true
           }
         ],
-        "standardAmount": "2",
+        "standardAmount": 2,
         "id": "85b621b7-e3e8-4612-a01b-f154fcd8133d",
         "completed": true
       },
@@ -3481,7 +3532,7 @@
             "optional": true
           }
         ],
-        "standardAmount": "1",
+        "standardAmount": 1,
         "id": "069ab703-c0a1-49f6-80d3-e53716a85923",
         "completed": true
       },
@@ -3505,7 +3556,7 @@
             }
           }
         ],
-        "standardAmount": "2",
+        "standardAmount": 2,
         "id": "e0f1eea7-5d26-43b3-ab68-29a215d659cf",
         "completed": true
       },
@@ -3543,7 +3594,7 @@
             }
           }
         ],
-        "standardAmount": "2",
+        "standardAmount": 2,
         "id": "8e925bc9-4990-4b8d-b1c6-fd2ba864cb47",
         "completed": true
       },
@@ -3616,7 +3667,7 @@
             }
           }
         ],
-        "standardAmount": "2",
+        "standardAmount": 2,
         "id": "86740804-8d55-48ec-b94e-893ee03a4003",
         "completed": true
       },
@@ -3703,7 +3754,7 @@
             }
           }
         ],
-        "standardAmount": "2",
+        "standardAmount": 2,
         "id": "228b4b31-8d52-4df5-9a4c-df897c5108dc",
         "completed": true
       },
@@ -3804,7 +3855,7 @@
             }
           }
         ],
-        "standardAmount": "2",
+        "standardAmount": 2,
         "id": "b9b6a618-4520-424a-9764-95e0410f5bbe",
         "completed": true
       },
@@ -3877,7 +3928,7 @@
             }
           }
         ],
-        "standardAmount": "2",
+        "standardAmount": 2,
         "id": "bc815c3d-8e24-4746-a93c-21c0d33fb82b",
         "completed": true
       },
@@ -3972,7 +4023,7 @@
             "optional": true
           }
         ],
-        "standardAmount": "2",
+        "standardAmount": 2,
         "id": "53eeb2d9-543c-42c1-8554-2ae539eae22e",
         "completed": true
       },
@@ -4073,7 +4124,7 @@
             }
           }
         ],
-        "standardAmount": "2",
+        "standardAmount": 2,
         "id": "49076420-e4b9-4b14-aa66-f142007114b6",
         "completed": true
       },
@@ -4111,7 +4162,7 @@
             }
           }
         ],
-        "standardAmount": "2",
+        "standardAmount": 2,
         "id": "b79c4615-e20a-4918-b1dd-c9c799b1485a",
         "completed": true
       },
@@ -4170,7 +4221,7 @@
             }
           }
         ],
-        "standardAmount": "2",
+        "standardAmount": 2,
         "id": "4477daf8-257a-401e-9701-11ea7af62fae",
         "completed": true
       },
@@ -4320,7 +4371,7 @@
             }
           }
         ],
-        "standardAmount": "2",
+        "standardAmount": 2,
         "id": "bf02684c-96f9-4d88-aa7e-410a693e61fa",
         "completed": true
       },
@@ -4428,7 +4479,7 @@
             }
           }
         ],
-        "standardAmount": "2",
+        "standardAmount": 2,
         "id": "5cfa9028-82c7-4747-a994-1d6385896ef7",
         "completed": true
       },
@@ -4445,7 +4496,7 @@
             }
           }
         ],
-        "standardAmount": "2",
+        "standardAmount": 2,
         "id": "aca15100-d01e-4543-946b-bf1f968397c9",
         "completed": false
       },
@@ -4541,7 +4592,7 @@
             "optional": true
           }
         ],
-        "standardAmount": "2",
+        "standardAmount": 2,
         "id": "b21b7ef8-eaae-4dc9-bdc4-77554a863711",
         "completed": true
       },
@@ -4650,7 +4701,7 @@
             }
           }
         ],
-        "standardAmount": "2",
+        "standardAmount": 2,
         "id": "76a7dc9f-3511-435b-b1e4-8f4ff0a910fa",
         "completed": true
       },
@@ -4674,7 +4725,7 @@
             }
           }
         ],
-        "standardAmount": "2",
+        "standardAmount": 2,
         "id": "f27af653-b0d6-4dab-b727-7625c292fc7a",
         "completed": true
       },
@@ -4691,7 +4742,7 @@
             }
           }
         ],
-        "standardAmount": "2",
+        "standardAmount": 2,
         "id": "4f9055ed-a385-480d-a636-9c7ee7cd454a",
         "completed": false
       },
@@ -4708,7 +4759,7 @@
             }
           }
         ],
-        "standardAmount": "2",
+        "standardAmount": 2,
         "id": "03f5b3f1-3bce-44fe-85f1-b33a715154c1",
         "completed": false
       },
@@ -4725,7 +4776,7 @@
             }
           }
         ],
-        "standardAmount": "2",
+        "standardAmount": 2,
         "id": "a7a53539-91e3-417b-a6bc-5ea9f882140c",
         "completed": false
       },
@@ -4742,7 +4793,7 @@
             }
           }
         ],
-        "standardAmount": "2",
+        "standardAmount": 2,
         "id": "26981c00-db7c-4f67-8f7e-1f5781c283c3",
         "completed": false
       },
@@ -4759,7 +4810,7 @@
             }
           }
         ],
-        "standardAmount": "2",
+        "standardAmount": 2,
         "id": "c38c172c-573d-47f8-8091-f92b63df3a37",
         "completed": false
       },
@@ -4776,7 +4827,7 @@
             }
           }
         ],
-        "standardAmount": "2",
+        "standardAmount": 2,
         "id": "9730b2a4-ea31-4755-bf57-a3d5f746423c",
         "completed": false
       },
@@ -4793,7 +4844,7 @@
             }
           }
         ],
-        "standardAmount": "2",
+        "standardAmount": 2,
         "id": "84d313c0-1227-4992-acf5-e01f6642c9a1",
         "completed": false
       },
@@ -4810,7 +4861,7 @@
             }
           }
         ],
-        "standardAmount": "2",
+        "standardAmount": 2,
         "id": "2294ffc7-774e-4116-9eac-0c26eb9d6328",
         "completed": false
       },
@@ -4827,7 +4878,7 @@
             }
           }
         ],
-        "standardAmount": "2",
+        "standardAmount": 2,
         "id": "41c50414-29bd-447e-965a-2b92fb82781b",
         "completed": false
       },
@@ -4844,7 +4895,7 @@
             }
           }
         ],
-        "standardAmount": "2",
+        "standardAmount": 2,
         "id": "1d834b16-e230-416a-af66-3a0721e5b58c",
         "completed": false
       },
@@ -4861,7 +4912,7 @@
             }
           }
         ],
-        "standardAmount": "2",
+        "standardAmount": 2,
         "id": "85e5ac82-67b8-4103-bb1f-291f734d0982",
         "completed": false
       },
@@ -4878,7 +4929,7 @@
             }
           }
         ],
-        "standardAmount": "2",
+        "standardAmount": 2,
         "id": "c5671609-c885-4912-9942-e1859cc85e93",
         "completed": false
       },
@@ -4888,14 +4939,50 @@
         "categories": [],
         "ingredients": [
           {
-            "name": "",
+            "name": "Hackleisch",
+            "amount": {
+              "value": 250,
+              "unit": "g"
+            }
+          },
+          {
+            "name": "Lipäckchen",
+            "amount": {
+              "value": 1,
+              "unit": ""
+            }
+          },
+          {
+            "name": "Kidneybohns",
+            "amount": {
+              "value": 400,
+              "unit": "g"
+            }
+          },
+          {
+            "name": "Mais",
+            "amount": {
+              "value": 200,
+              "unit": "g"
+            }
+          },
+          {
+            "name": "Livenöl",
             "amount": {
               "value": null,
               "unit": null
             }
+          },
+          {
+            "name": "Rot",
+            "amount": {
+              "value": null,
+              "unit": null
+            },
+            "optional": true
           }
         ],
-        "standardAmount": "2",
+        "standardAmount": 2,
         "id": "d3dd43dd-c108-4be5-a9d1-6d8346045eb4",
         "completed": false
       },
@@ -4947,7 +5034,7 @@
             }
           }
         ],
-        "standardAmount": "2",
+        "standardAmount": 2,
         "id": "065673da-a890-4273-a754-32f2c57277a5",
         "completed": true
       },
@@ -4964,7 +5051,7 @@
             }
           }
         ],
-        "standardAmount": "2",
+        "standardAmount": 2,
         "id": "d20c225a-72a8-40a6-b611-ed05bb9dbd40",
         "completed": false
       },
@@ -4981,7 +5068,7 @@
             }
           }
         ],
-        "standardAmount": "2",
+        "standardAmount": 2,
         "id": "1fa28e1c-2f65-44a8-a312-837632e7a6f0",
         "completed": false
       },
@@ -4998,7 +5085,7 @@
             }
           }
         ],
-        "standardAmount": "2",
+        "standardAmount": 2,
         "id": "d4a51688-4c2e-4d35-b7d6-60dce355ef07",
         "completed": false
       },
@@ -5015,7 +5102,7 @@
             }
           }
         ],
-        "standardAmount": "2",
+        "standardAmount": 2,
         "id": "715ab26e-f5cb-4512-975f-b4064c95c116",
         "completed": false
       },
@@ -5032,7 +5119,7 @@
             }
           }
         ],
-        "standardAmount": "2",
+        "standardAmount": 2,
         "id": "ee6eea1d-d265-4133-8367-74252809c01c",
         "completed": false
       },
@@ -5049,7 +5136,7 @@
             }
           }
         ],
-        "standardAmount": "2",
+        "standardAmount": 2,
         "id": "28e93ca0-f443-4d33-8e40-580c1aade210",
         "completed": false
       },
@@ -5066,7 +5153,7 @@
             }
           }
         ],
-        "standardAmount": "2",
+        "standardAmount": 2,
         "id": "0ccceeb5-f503-4b15-b36a-31d6315447c9",
         "completed": false
       },
@@ -5083,7 +5170,7 @@
             }
           }
         ],
-        "standardAmount": "2",
+        "standardAmount": 2,
         "id": "b5364bd2-f503-41e9-a1d2-1db3c7c2fd00",
         "completed": false
       },
@@ -5100,7 +5187,7 @@
             }
           }
         ],
-        "standardAmount": "2",
+        "standardAmount": 2,
         "id": "73a3bb1e-dc41-4bc2-ad1b-3fae2c1a8159",
         "completed": false
       },
@@ -5117,7 +5204,7 @@
             }
           }
         ],
-        "standardAmount": "2",
+        "standardAmount": 2,
         "id": "a27ae6cb-e46a-4609-b09b-59a592c6f0a3",
         "completed": false
       },
@@ -5134,7 +5221,7 @@
             }
           }
         ],
-        "standardAmount": "2",
+        "standardAmount": 2,
         "id": "c0c6a0f1-ab80-4f0a-9113-dc9255b997f8",
         "completed": false
       },
@@ -5151,7 +5238,7 @@
             }
           }
         ],
-        "standardAmount": "2",
+        "standardAmount": 2,
         "id": "6d038ae1-f0b1-48d7-b524-123c9bfa4ace",
         "completed": false
       },
@@ -5168,7 +5255,7 @@
             }
           }
         ],
-        "standardAmount": "2",
+        "standardAmount": 2,
         "id": "94ee774b-c869-4413-a10a-1c49a5778336",
         "completed": false
       },
@@ -5185,7 +5272,7 @@
             }
           }
         ],
-        "standardAmount": "2",
+        "standardAmount": 2,
         "id": "e1ca889a-0174-4978-bd1a-5de23e7d2e26",
         "completed": false
       },
@@ -5202,7 +5289,7 @@
             }
           }
         ],
-        "standardAmount": "2",
+        "standardAmount": 2,
         "id": "3acc688d-26ca-47ff-aa1f-2965cdbcba65",
         "completed": false
       },
@@ -5219,7 +5306,7 @@
             }
           }
         ],
-        "standardAmount": "2",
+        "standardAmount": 2,
         "id": "2cf592f9-8c26-47d7-a624-9ece57ff4b4d",
         "completed": false
       },
@@ -5236,7 +5323,7 @@
             }
           }
         ],
-        "standardAmount": "2",
+        "standardAmount": 2,
         "id": "fa554a03-ad59-4448-bbb7-e22b19318bf6",
         "completed": false
       },
@@ -5253,7 +5340,7 @@
             }
           }
         ],
-        "standardAmount": "2",
+        "standardAmount": 2,
         "id": "ed1556e8-e753-4f1e-94ad-b755fdcbdb04",
         "completed": false
       },
@@ -5270,7 +5357,7 @@
             }
           }
         ],
-        "standardAmount": "2",
+        "standardAmount": 2,
         "id": "6db039d4-ed4d-4b27-9f37-be94ff45ce2d",
         "completed": false
       },
@@ -5287,7 +5374,7 @@
             }
           }
         ],
-        "standardAmount": "2",
+        "standardAmount": 2,
         "id": "837c9b01-827e-4cef-99bd-47a75f0b0104",
         "completed": false
       },
@@ -5304,42 +5391,74 @@
             }
           }
         ],
-        "standardAmount": "2",
+        "standardAmount": 2,
         "id": "012f9ea6-6a2b-4c1a-834a-176dacb9a196",
         "completed": false
       }
     ],
     "ingredients": [
       {
+        "name": "Bis",
+        "vendor": "We"
+      },
+      {
+        "name": "Blauch",
+        "vendor": "Markt (Toffeltand)"
+      },
+      {
+        "name": "Bohnenraut",
+        "vendor": "Markt (Müsetand)"
+      },
+      {
+        "name": "Butter",
+        "vendor": "We (Milchdukts)"
+      },
+      {
         "name": "Cado",
         "vendor": "We"
       },
       {
-        "name": "Tailmaten",
-        "vendor": "We"
-      },
-      {
-        "name": "Wiebels",
-        "vendor": "Markt (Toffeltand)"
-      },
-      {
-        "name": "Ke",
-        "vendor": "We"
-      },
-      {
-        "name": "Gelbe Rika",
-        "vendor": "Markt (Müsetand)"
-      },
-      {
-        "name": "Feta",
+        "name": "Camembert",
         "vendor": "We (Käse)"
       },
       {
-        "name": "Nienkerns",
-        "vendor": "Online"
+        "name": "Ccoli",
+        "vendor": "We"
       },
       {
-        "name": "Salz",
+        "name": "Ccolitinpäckchen",
+        "vendor": "We"
+      },
+      {
+        "name": "Cola",
+        "vendor": "Markt (Müsetand)"
+      },
+      {
+        "name": "Cuja",
+        "vendor": "Markt (Müsetand)"
+      },
+      {
+        "name": "Delbeers",
+        "vendor": "Markt (Müsetand)"
+      },
+      {
+        "name": "Dels",
+        "vendor": "We"
+      },
+      {
+        "name": "Dill",
+        "vendor": "Markt (Müsetand)"
+      },
+      {
+        "name": "Eis in Röße M",
+        "vendor": "We"
+      },
+      {
+        "name": "Erdbeers",
+        "vendor": "Markt (Müsetand)"
+      },
+      {
+        "name": "Essig",
         "vendor": "We"
       },
       {
@@ -5347,24 +5466,96 @@
         "vendor": "Online"
       },
       {
-        "name": "Tronensaft",
+        "name": "Ferlocken",
         "vendor": "We"
       },
       {
-        "name": "Nittlauch",
+        "name": "Feta",
+        "vendor": "We (Käse)"
+      },
+      {
+        "name": "Firsichs oder Tarinen",
         "vendor": "Markt (Müsetand)"
       },
       {
-        "name": "Samicoreme",
+        "name": "Gehacktes Dels",
         "vendor": "We"
       },
       {
-        "name": "Zucker",
+        "name": "Gelbe Rika",
+        "vendor": "Markt (Müsetand)"
+      },
+      {
+        "name": "Geschälte Maten",
         "vendor": "We"
+      },
+      {
+        "name": "Guette",
+        "vendor": "Bäcker"
+      },
+      {
+        "name": "Gwer",
+        "vendor": "Markt (Müsetand)"
+      },
+      {
+        "name": "Hackleisch",
+        "vendor": "Markt (Metzger)"
+      },
+      {
+        "name": "Himbeers",
+        "vendor": "Markt (Müsetand)"
+      },
+      {
+        "name": "Kaonibs",
+        "vendor": "Natura"
+      },
+      {
+        "name": "Käse",
+        "vendor": "Markt (Metzger)"
+      },
+      {
+        "name": "Ke",
+        "vendor": "We"
+      },
+      {
+        "name": "Kelhuhn",
+        "vendor": "Kelhuhnladen"
+      },
+      {
+        "name": "Körnerruste",
+        "vendor": "Markt (Zeit für Rot)"
+      },
+      {
+        "name": "Körniges Senf",
+        "vendor": "We"
+      },
+      {
+        "name": "Koslakes",
+        "vendor": "Natura"
+      },
+      {
+        "name": "Kosmilch",
+        "vendor": "We"
+      },
+      {
+        "name": "Lachs",
+        "vendor": "We"
+      },
+      {
+        "name": "Lami",
+        "vendor": "Markt (Metzger)"
       },
       {
         "name": "Lat",
         "vendor": "Markt (Müsetand)"
+      },
+      {
+        "name": "Laträuter",
+        "vendor": "Online"
+      },
+      {
+        "name": "Leinsams",
+        "vendor": "We"
       },
       {
         "name": "Leisch",
@@ -5375,203 +5566,11 @@
         "vendor": "Markt (Metzger)"
       },
       {
-        "name": "Livenöl",
-        "vendor": "Online"
-      },
-      {
-        "name": "Blauch",
-        "vendor": "Markt (Toffeltand)"
-      },
-      {
-        "name": "Körnerruste",
-        "vendor": "Markt (Zeit für Rot)"
-      },
-      {
-        "name": "Nig",
-        "vendor": "We"
-      },
-      {
-        "name": "Ferlocken",
-        "vendor": "We"
-      },
-      {
-        "name": "Sinen",
-        "vendor": "We"
-      },
-      {
-        "name": "Nnenlumenkerns",
-        "vendor": "We"
-      },
-      {
-        "name": "Kaonibs",
-        "vendor": "Natura"
-      },
-      {
-        "name": "Koslakes",
-        "vendor": "Natura"
-      },
-      {
-        "name": "Leinsams",
-        "vendor": "We"
-      },
-      {
-        "name": "Gehacktes Dels",
-        "vendor": "We"
-      },
-      {
-        "name": "Pfel",
-        "vendor": "We"
-      },
-      {
-        "name": "Nane",
-        "vendor": "Markt (Müsetand)"
-      },
-      {
-        "name": "Erdbeers",
-        "vendor": "Markt (Müsetand)"
-      },
-      {
-        "name": "Dels",
-        "vendor": "We"
-      },
-      {
-        "name": "Pignons",
-        "vendor": "Markt (Müsetand)"
-      },
-      {
-        "name": "Sahne",
-        "vendor": "We (Milchdukts)"
-      },
-      {
-        "name": "Weißwein",
-        "vendor": "We"
-      },
-      {
-        "name": "Silie",
-        "vendor": "Markt (Müsetand)"
-      },
-      {
         "name": "Lilocken",
         "vendor": "We"
       },
       {
-        "name": "Rrata",
-        "vendor": "We (Käse)"
-      },
-      {
-        "name": "Kelhuhn",
-        "vendor": "Kelhuhnladen"
-      },
-      {
-        "name": "Toffellat",
-        "vendor": "Kelhuhnladen"
-      },
-      {
-        "name": "Rautlat",
-        "vendor": "Kelhuhnladen"
-      },
-      {
-        "name": "Rot",
-        "vendor": "Bäcker"
-      },
-      {
-        "name": "Laträuter",
-        "vendor": "Online"
-      },
-      {
-        "name": "Saures Sahne",
-        "vendor": "We (Milchdukts)"
-      },
-      {
-        "name": "Sonnenlumenöl",
-        "vendor": "We"
-      },
-      {
-        "name": "Essig",
-        "vendor": "We"
-      },
-      {
-        "name": "Camembert",
-        "vendor": "We (Käse)"
-      },
-      {
-        "name": "Cola",
-        "vendor": "Markt (Müsetand)"
-      },
-      {
-        "name": "Pfelessig",
-        "vendor": "We"
-      },
-      {
-        "name": "Senf",
-        "vendor": "We"
-      },
-      {
-        "name": "Radicchio",
-        "vendor": "Markt (Müsetand)"
-      },
-      {
-        "name": "Dill",
-        "vendor": "Markt (Müsetand)"
-      },
-      {
-        "name": "Minze",
-        "vendor": "Markt (Müsetand)"
-      },
-      {
-        "name": "Tronenmelisse",
-        "vendor": "Markt (Müsetand)"
-      },
-      {
-        "name": "Himbeers",
-        "vendor": "Markt (Müsetand)"
-      },
-      {
-        "name": "Weißes Samico",
-        "vendor": "We"
-      },
-      {
-        "name": "Öl",
-        "vendor": "We"
-      },
-      {
-        "name": "Ziegenkäse (Rolle)",
-        "vendor": "We (Käse)"
-      },
-      {
-        "name": "Sottoreis",
-        "vendor": "We"
-      },
-      {
-        "name": "Müserühe",
-        "vendor": "We"
-      },
-      {
-        "name": "Rella",
-        "vendor": "We (Käse)"
-      },
-      {
-        "name": "Mesan",
-        "vendor": "We (Käse)"
-      },
-      {
-        "name": "Rianderpulver",
-        "vendor": "We"
-      },
-      {
-        "name": "Maten",
-        "vendor": "We"
-      },
-      {
-        "name": "Mazola",
-        "vendor": "We"
-      },
-      {
-        "name": "Räuteressig",
-        "vendor": "We"
-      },
-      {
-        "name": "Regano",
+        "name": "Livenöl",
         "vendor": "Online"
       },
       {
@@ -5579,31 +5578,11 @@
         "vendor": "We"
       },
       {
-        "name": "Butter",
-        "vendor": "We (Milchdukts)"
+        "name": "Marin",
+        "vendor": "Online"
       },
       {
-        "name": "Melade",
-        "vendor": "We"
-      },
-      {
-        "name": "Ner",
-        "vendor": "Nerladen"
-      },
-      {
-        "name": "Hackleisch",
-        "vendor": ""
-      },
-      {
-        "name": "Rikapulver",
-        "vendor": "We"
-      },
-      {
-        "name": "Rika",
-        "vendor": "Markt (Müsetand)"
-      },
-      {
-        "name": "Reis",
+        "name": "Maten",
         "vendor": "We"
       },
       {
@@ -5611,131 +5590,31 @@
         "vendor": "We"
       },
       {
-        "name": "Passierte Maten",
+        "name": "Mazola",
         "vendor": "We"
       },
       {
-        "name": "Rrytchup",
+        "name": "Mehl",
         "vendor": "We"
       },
       {
-        "name": "Rüne Rika",
-        "vendor": "Markt (Müsetand)"
-      },
-      {
-        "name": "Rauchmaten",
-        "vendor": "Markt (Müsetand)"
-      },
-      {
-        "name": "Firsichs oder Tarinen",
-        "vendor": "Markt (Müsetand)"
-      },
-      {
-        "name": "Weißweinessig",
+        "name": "Melade",
         "vendor": "We"
       },
       {
-        "name": "Nig oder Hornsirup",
-        "vendor": "We"
-      },
-      {
-        "name": "Teak",
-        "vendor": "Markt (Metzger)"
-      },
-      {
-        "name": "Rillwurst",
-        "vendor": "Markt (Metzger)"
-      },
-      {
-        "name": "Lachs",
-        "vendor": "We"
-      },
-      {
-        "name": "Nelen",
-        "vendor": "We"
-      },
-      {
-        "name": "Guette",
-        "vendor": "Bäcker"
-      },
-      {
-        "name": "Ziegenkäse",
+        "name": "Mesan",
         "vendor": "We (Käse)"
-      },
-      {
-        "name": "Marin",
-        "vendor": "Online"
-      },
-      {
-        "name": "Körniges Senf",
-        "vendor": "We"
-      },
-      {
-        "name": "Rote Bete",
-        "vendor": "Markt (Müsetand)"
-      },
-      {
-        "name": "Rauke",
-        "vendor": "Markt (Müsetand)"
-      },
-      {
-        "name": "Cuja",
-        "vendor": "Markt (Müsetand)"
-      },
-      {
-        "name": "Käse",
-        "vendor": "Markt (Metzger)"
-      },
-      {
-        "name": "Tufo",
-        "vendor": "Markt (Metzger)"
-      },
-      {
-        "name": "Lami",
-        "vendor": "Markt (Metzger)"
-      },
-      {
-        "name": "Rustenraten",
-        "vendor": ""
-      },
-      {
-        "name": "Wi",
-        "vendor": "Markt (Müsetand)"
-      },
-      {
-        "name": "Tarine",
-        "vendor": "Markt (Müsetand)"
-      },
-      {
-        "name": "Delbeers",
-        "vendor": "Markt (Müsetand)"
-      },
-      {
-        "name": "Rischkäse",
-        "vendor": "Markt (Fischkäse)"
-      },
-      {
-        "name": "Risch geresstes Rangensaft",
-        "vendor": "Markt (Müsetand)"
-      },
-      {
-        "name": "Raubs",
-        "vendor": "Markt (Müsetand)"
-      },
-      {
-        "name": "Geschälte Maten",
-        "vendor": "We"
-      },
-      {
-        "name": "Rotwein",
-        "vendor": "We"
       },
       {
         "name": "Milch",
         "vendor": "We (Milchdukts)"
       },
       {
-        "name": "Mehl",
+        "name": "Minze",
+        "vendor": "Markt (Müsetand)"
+      },
+      {
+        "name": "Müserühe",
         "vendor": "We"
       },
       {
@@ -5743,40 +5622,92 @@
         "vendor": "We"
       },
       {
-        "name": "Sagnelatten",
+        "name": "Nane",
+        "vendor": "Markt (Müsetand)"
+      },
+      {
+        "name": "Nelen",
         "vendor": "We"
       },
       {
-        "name": "Reukäse",
+        "name": "Ner",
+        "vendor": "Nerladen"
+      },
+      {
+        "name": "Nienkerns",
+        "vendor": "Online"
+      },
+      {
+        "name": "Nig",
+        "vendor": "We"
+      },
+      {
+        "name": "Nig oder Hornsirup",
+        "vendor": "We"
+      },
+      {
+        "name": "Nittlauch",
+        "vendor": "Markt (Müsetand)"
+      },
+      {
+        "name": "Nnenlumenkerns",
+        "vendor": "We"
+      },
+      {
+        "name": "Öl",
+        "vendor": "We"
+      },
+      {
+        "name": "Passierte Maten",
+        "vendor": "We"
+      },
+      {
+        "name": "Pfel",
+        "vendor": "We"
+      },
+      {
+        "name": "Pfelessig",
+        "vendor": "We"
+      },
+      {
+        "name": "Pignons",
+        "vendor": "Markt (Müsetand)"
+      },
+      {
+        "name": "Radicchio",
+        "vendor": "Markt (Müsetand)"
+      },
+      {
+        "name": "Raubs",
+        "vendor": "Markt (Müsetand)"
+      },
+      {
+        "name": "Rauchmaten",
+        "vendor": "Markt (Müsetand)"
+      },
+      {
+        "name": "Rauke",
+        "vendor": "Markt (Müsetand)"
+      },
+      {
+        "name": "Räuteressig",
+        "vendor": "We"
+      },
+      {
+        "name": "Rautlat",
+        "vendor": "Kelhuhnladen"
+      },
+      {
+        "name": "Regano",
+        "vendor": "Online"
+      },
+      {
+        "name": "Reis",
+        "vendor": "We"
+      },
+      {
+        "name": "Rella",
         "vendor": "We (Käse)"
-      },
-      {
-        "name": "Eis in Röße M",
-        "vendor": "We"
-      },
-      {
-        "name": "Wasser",
-        "vendor": "We"
-      },
-      {
-        "name": "Rote Wiebels",
-        "vendor": "Markt (Toffeltand)"
-      },
-      {
-        "name": "Silikum",
-        "vendor": "Markt (Müsetand)"
-      },
-      {
-        "name": "Bis",
-        "vendor": "We"
-      },
-      {
-        "name": "Schalotten",
-        "vendor": "Markt (Müsetand)"
-      },
-      {
-        "name": "Rühlingswiebels",
-        "vendor": "Markt (Müsetand)"
       },
       {
         "name": "Reme raiche",
@@ -5787,44 +5718,212 @@
         "vendor": "Markt (Müsetand)"
       },
       {
-        "name": "Rotten",
-        "vendor": "Markt (Müsetand)"
+        "name": "Reukäse",
+        "vendor": "We (Käse)"
       },
       {
-        "name": "Toffels",
-        "vendor": "Markt (Toffeltand)"
-      },
-      {
-        "name": "Gwer",
-        "vendor": "Markt (Müsetand)"
-      },
-      {
-        "name": "Kosmilch",
+        "name": "Rianderpulver",
         "vendor": "We"
+      },
+      {
+        "name": "Rika",
+        "vendor": "Markt (Müsetand)"
+      },
+      {
+        "name": "Rikapulver",
+        "vendor": "We"
+      },
+      {
+        "name": "Rillwurst",
+        "vendor": "Markt (Metzger)"
+      },
+      {
+        "name": "Risch geresstes Rangensaft",
+        "vendor": "Markt (Müsetand)"
+      },
+      {
+        "name": "Risches Silikum",
+        "vendor": "Markt (Müsetand)"
+      },
+      {
+        "name": "Rischkäse",
+        "vendor": "Markt (Fischkäse)"
+      },
+      {
+        "name": "Rot",
+        "vendor": "Bäcker"
+      },
+      {
+        "name": "Rote Bete",
+        "vendor": "Markt (Müsetand)"
+      },
+      {
+        "name": "Rote Wiebels",
+        "vendor": "Markt (Toffeltand)"
       },
       {
         "name": "Rotes Currypaste",
         "vendor": "We"
       },
       {
+        "name": "Rotten",
+        "vendor": "Markt (Müsetand)"
+      },
+      {
+        "name": "Rotwein",
+        "vendor": "We"
+      },
+      {
+        "name": "Rrata",
+        "vendor": "We (Käse)"
+      },
+      {
+        "name": "Rrytchup",
+        "vendor": "We"
+      },
+      {
+        "name": "Rühlingswak",
+        "vendor": "We (Milchdukts)"
+      },
+      {
+        "name": "Rühlingswiebels",
+        "vendor": "Markt (Müsetand)"
+      },
+      {
         "name": "Rüne Bohnen",
         "vendor": "Markt (Müsetand)"
       },
       {
-        "name": "Bohnenraut",
+        "name": "Rüne Rika",
         "vendor": "Markt (Müsetand)"
       },
       {
+        "name": "Rustenraten",
+        "vendor": "Markt (Metzger)"
+      },
+      {
+        "name": "Sagnelatten",
+        "vendor": "We"
+      },
+      {
+        "name": "Sahne",
+        "vendor": "We (Milchdukts)"
+      },
+      {
+        "name": "Salz",
+        "vendor": "We"
+      },
+      {
+        "name": "Samicoreme",
+        "vendor": "We"
+      },
+      {
+        "name": "Saures Sahne",
+        "vendor": "We (Milchdukts)"
+      },
+      {
+        "name": "Schalotten",
+        "vendor": "Markt (Müsetand)"
+      },
+      {
+        "name": "Senf",
+        "vendor": "We"
+      },
+      {
+        "name": "Silie",
+        "vendor": "Markt (Müsetand)"
+      },
+      {
+        "name": "Silikum",
+        "vendor": "Markt (Müsetand)"
+      },
+      {
+        "name": "Sinen",
+        "vendor": "We"
+      },
+      {
+        "name": "Sonnenlumenöl",
+        "vendor": "We"
+      },
+      {
+        "name": "Sottoreis",
+        "vendor": "We"
+      },
+      {
+        "name": "Tailmaten",
+        "vendor": "We"
+      },
+      {
+        "name": "Tarine",
+        "vendor": "Markt (Müsetand)"
+      },
+      {
+        "name": "Teak",
+        "vendor": "Markt (Metzger)"
+      },
+      {
+        "name": "Toffellat",
+        "vendor": "Kelhuhnladen"
+      },
+      {
+        "name": "Toffels",
+        "vendor": "Markt (Toffeltand)"
+      },
+      {
+        "name": "Tronenmelisse",
+        "vendor": "Markt (Müsetand)"
+      },
+      {
+        "name": "Tronensaft",
+        "vendor": "We"
+      },
+      {
+        "name": "Tufo",
+        "vendor": "Markt (Metzger)"
+      },
+      {
+        "name": "Wasser",
+        "vendor": "We"
+      },
+      {
+        "name": "Weißes Samico",
+        "vendor": "We"
+      },
+      {
+        "name": "Weißwein",
+        "vendor": "We"
+      },
+      {
+        "name": "Weißweinessig",
+        "vendor": "We"
+      },
+      {
+        "name": "Wi",
+        "vendor": "Markt (Müsetand)"
+      },
+      {
+        "name": "Wiebels",
+        "vendor": "Markt (Toffeltand)"
+      },
+      {
         "name": "Xikanisches Fannenmüse",
         "vendor": ""
       },
       {
-        "name": "Rühlingswak",
+        "name": "Xikanisches Fannenmüse",
         "vendor": ""
       },
       {
-        "name": "Xikanisches Fannenmüse",
-        "vendor": ""
+        "name": "Ziegenkäse",
+        "vendor": "We (Käse)"
+      },
+      {
+        "name": "Ziegenkäse (Rolle)",
+        "vendor": "We (Käse)"
+      },
+      {
+        "name": "Zucker",
+        "vendor": "We"
       }
     ]
   }

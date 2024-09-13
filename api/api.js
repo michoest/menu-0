@@ -74,7 +74,7 @@ app.put('/list/item/:id', asyncWrapper(async (req, res, next) => {
 }));
 
 app.delete('/list/item/:id', asyncWrapper(async (req, res, next) => {
-    _.remove(db.list, item => item.id == req.params.id);
+    db.list.items = _.remove(db.list.items, item => item.id == req.params.id);
 
     return res.json(db.list);
 }));

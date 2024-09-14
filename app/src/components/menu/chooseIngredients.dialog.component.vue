@@ -14,9 +14,10 @@
                                   {{ ingredient.name }}
                                   <q-badge v-if="ingredient.subdish" class="q-mx-sm" color="secondary">{{ ingredient.subdish }}</q-badge>
                                   <q-badge v-if="ingredient.optional" class="q-mx-sm">Optional</q-badge>
-                                  <q-chip removable dense :model-value="!!ingredient.due" @remove="ingredient.due = null" class="q-mx-sm" outline color="accent" text-color="white">
+                                  <!-- <q-chip removable dense :model-value="!!ingredient.due" @remove="ingredient.due = null" class="q-mx-sm" outline color="accent" text-color="white">
                                       {{ ingredient.due.fromNow() }}
-                                  </q-chip>
+                                  </q-chip> -->
+                                  <q-badge v-if="!!ingredient.due" class="q-mx-sm text-white" color="accent" @click.stop="ingredient.due = null">{{ingredient.due.fromNow()}}</q-badge>
                               </q-item-label>
                               <q-item-label caption>{{ ingredient.amount.value }} {{ ingredient.amount.unit }}</q-item-label>
                           </q-item-section>
@@ -39,7 +40,8 @@
           <q-separator inset />
 
           <q-card-actions align="right">
-              <q-btn flat color="primary" label="Add to list" @click="onClickAddToList" />
+            <q-btn flat color="negative" label="Back" @click="onClickBack" />
+            <q-btn flat color="primary" label="Add to list" @click="onClickAddToList" />
           </q-card-actions>
       </q-card>
   </q-dialog>
@@ -64,13 +66,9 @@ const show = defineModel();
 const props = defineProps({
   dishes: Array
 });
-const emit = defineEmits(['add']);
-
-// const $notify = inject('notify');
+const emit = defineEmits(['add', 'back']);
 
 const dishes = ref(_.cloneDeep(props.dishes));
-const shoppingList = ref(null);
-const postponeIngredientDialog = ref({ show: false });
 
 const addIngredientDialog = ref({
   show: false,
@@ -91,6 +89,11 @@ dishes.value = _.cloneDeep(newValue);
 const onClickAddToList = () => {
   const ingredients = dishes.value.flatMap(dish => dish.dish.ingredients);
   emit('add', ingredients);
+  show.value = false;
+};
+
+const onClickBack = () => {
+  emit('back');
   show.value = false;
 };
 

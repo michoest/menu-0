@@ -10,6 +10,10 @@
                       </q-input>
                       <q-input v-show="showFields.category" :ref="el => inputFields.category = el" borderless v-model="item.category" dense placeholder="Category" @keyup.enter="onClickSave">
                           <template v-slot:prepend><q-icon size="xs" name="category" /></template>
+                          <template v-slot:after>
+                            <q-btn outline rounded dense label="We" no-caps class="q-px-md" @click="item.category = 'We'" />
+                            <q-btn outline rounded dense label="Markt" no-caps class="q-px-md" @click="item.category = 'Markt'" />
+                          </template>
                       </q-input>
                       <q-input v-show="showFields.due" :ref="el => inputFields.due = el" borderless v-model="item.due" dense placeholder="Due" @keyup.enter="onClickSave">
                           <template v-slot:prepend><q-icon size="xs" name="alarm_on" /></template>

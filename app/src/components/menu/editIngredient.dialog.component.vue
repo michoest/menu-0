@@ -1,5 +1,5 @@
 <template>
-  <q-dialog v-model="show" position="bottom" @hide="clearInputs">
+  <q-dialog v-model="show" position="bottom" @hide="clearInputs" @before-show="initInputs">
       <q-card style="width: 350px" class="q-px-md">
           <q-card-section>
               <div class="q-px-md">

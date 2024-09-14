@@ -50,6 +50,13 @@
       <q-item>
         <q-item-label>{{ dayjs(buildDate) }}</q-item-label>
       </q-item>
+
+      <q-separator inset spaced="xl" />
+
+      <q-expansion-item label="Advanced" switch-toggle-side>
+          <q-btn @click="onClickSendNotification">Send notification</q-btn>
+          <q-btn @click="onClickGetLocation">Get location</q-btn>
+      </q-expansion-item>
     </q-list>
   </q-page>
 </template>
@@ -93,4 +100,39 @@ onMounted(async () => {
   await checkAPI();
   loading.value = false;
 });
+
+const onClickSendNotification = async () => {
+  alert(1);
+  if (!("Notification" in window)) {
+    // Check if the browser supports notifications
+    alert("This browser does not support desktop notification");
+  } else if (Notification.permission === "granted") {
+    // Check whether notification permissions have already been granted;
+    // if so, create a notification
+    const notification = new Notification("Hi there!");
+    // …
+  } else if (Notification.permission !== "denied") {
+    // We need to ask the user for permission
+    Notification.requestPermission().then((permission) => {
+      // If the user accepts, let's create a notification
+      if (permission === "granted") {
+        const notification = new Notification("Hi there!");
+        // …
+      }
+    });
+  }
+  else {
+    alert(Notification.permission);
+  }
+};
+
+const onClickGetLocation = () => {
+  if ("geolocation" in navigator) {
+    alert(1);
+    navigator.geolocation.getCurrentPosition.then((position) => {
+      alert(2);
+      console.log(position.coords.latitude, position.coords.longitude);
+    });
+  }
+};
 </script>

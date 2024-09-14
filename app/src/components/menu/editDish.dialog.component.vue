@@ -58,7 +58,8 @@
           </q-card-section>
 
           <q-card-actions align="right">
-              <q-btn flat color="primary" :disable="dish.ingredients?.length == 0" @click="onClickSave">Save</q-btn>
+            <q-btn flat color="negative" label="Back" @click="onClickBack" />
+            <q-btn flat color="primary" :disable="dish.ingredients?.length == 0" @click="onClickSave">Save</q-btn>
           </q-card-actions>
       </q-card>
   </q-dialog>
@@ -70,7 +71,7 @@ import _ from 'lodash';
 
 const show = defineModel();
 const props = defineProps({ dish: Object });
-const emit = defineEmits(['save']);
+const emit = defineEmits(['save', 'back']);
 
 const dish = ref(_.cloneDeep(props.dish));
 
@@ -105,4 +106,10 @@ const onClickSave = () => {
 
   emit('save', _.cloneDeep(dish.value));
 }
+
+const onClickBack = () => {
+  show.value = false;
+
+  emit('back');
+};
 </script>

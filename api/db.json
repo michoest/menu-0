@@ -1,226 +1,6 @@
 {
   "list": {
-    "items": [
-      {
-        "id": "758e93e7-1d94-4cf5-9e21-6ec561b5446d",
-        "status": "completed",
-        "name": "Bla",
-        "notes": "Test",
-        "category": "Markt",
-        "due": null
-      },
-      {
-        "id": "5dcdb3cd-907d-4a76-b4fe-e3152cb3aaed",
-        "status": "completed",
-        "name": "Lums",
-        "notes": "",
-        "category": "Markt",
-        "due": null
-      },
-      {
-        "id": "e40a9951-bb11-4555-b5b3-05451d4f19df",
-        "status": "completed",
-        "name": "lkj",
-        "notes": "",
-        "category": "",
-        "due": "lkjh"
-      },
-      {
-        "id": "6e276c1a-40cc-42b9-b4ec-e70434a8eccd",
-        "status": "open",
-        "name": "Pfelschorle",
-        "notes": "",
-        "category": "We",
-        "due": null
-      },
-      {
-        "id": "28c60e3b-90d4-4b1e-9127-4386a0e9e297",
-        "status": "completed",
-        "name": "Butter ",
-        "notes": "",
-        "category": "",
-        "due": null
-      },
-      {
-        "id": "ee7eb955-fa6e-4471-8d55-f7002f0b721b",
-        "status": "completed",
-        "name": "Weißwein",
-        "notes": "",
-        "category": "",
-        "due": null
-      },
-      {
-        "id": "c51f938e-0eef-4769-b8d1-f4fab78902bd",
-        "status": "completed",
-        "name": "Mesan",
-        "notes": "",
-        "category": "",
-        "due": null
-      },
-      {
-        "id": "5523c0b1-f235-4e3f-8397-7c7369d96b88",
-        "status": "completed",
-        "name": "Nittlauch",
-        "notes": "",
-        "category": "Markt (Müsetand)",
-        "due": null
-      },
-      {
-        "id": "a863cd8f-469a-4955-aa54-3872e4735858",
-        "status": "completed",
-        "name": "Tailmaten",
-        "notes": "",
-        "category": "",
-        "due": null
-      },
-      {
-        "id": "8cd44cbb-3a39-4a31-b06d-290258868536",
-        "status": "completed",
-        "name": "Fifferlings",
-        "notes": "350 g",
-        "category": "Markt (Müsetand)",
-        "due": null
-      },
-      {
-        "id": "1e124d84-85fd-49ba-9ea3-9e9b8c742e93",
-        "status": "completed",
-        "name": "Milch",
-        "notes": "",
-        "category": "",
-        "due": null
-      },
-      {
-        "id": "4b282c2f-fc63-497d-8779-900781e879ff",
-        "status": "completed",
-        "name": "Rot",
-        "notes": "",
-        "category": "Nette",
-        "due": null
-      },
-      {
-        "id": "6d4cdc46-a755-4000-8337-9833a9115f7d",
-        "status": "completed",
-        "name": "Hackleisch",
-        "notes": "",
-        "category": "Markt (Metzger)",
-        "due": null
-      },
-      {
-        "id": "6d669f95-7d1c-465c-a4e1-1ce3dc52a189",
-        "status": "completed",
-        "name": "Kobons",
-        "notes": "",
-        "category": "We",
-        "due": null
-      },
-      {
-        "id": "fb632438-6d1f-4bda-82e3-8d806f83bb5d",
-        "status": "completed",
-        "name": "Lumpfs",
-        "notes": "",
-        "category": "We",
-        "due": null
-      },
-      {
-        "id": "1fc1f6a1-2e1f-41c2-8643-544484c7e7ba",
-        "status": "completed",
-        "name": "Damias",
-        "notes": "",
-        "category": "We",
-        "due": null
-      },
-      {
-        "id": "93d72425-b5d1-4243-9fbe-e7d42d413333",
-        "name": "Ccoli",
-        "category": "",
-        "notes": "2 ",
-        "status": "completed"
-      },
-      {
-        "id": "fa9a4b6b-f7f5-4180-be52-391a4fcb0a87",
-        "name": "Ccolitinpäckchen",
-        "category": "We",
-        "notes": "2 ",
-        "status": "open"
-      },
-      {
-        "id": "8ad05c9c-9f33-4cde-8bac-0157d3be73c9",
-        "name": "Reukäse",
-        "category": "We (Käse)",
-        "notes": "200 g",
-        "status": "completed"
-      },
-      {
-        "id": "1de9ad87-fc1c-4a5c-a2bd-00fccc2276a6",
-        "name": "Gehacktes Dels",
-        "category": "We",
-        "notes": "",
-        "status": "completed"
-      },
-      {
-        "id": "8ae004eb-4966-408c-b71d-f4075b360ede",
-        "name": "Pfel",
-        "category": "We",
-        "notes": "0.5 ",
-        "status": "completed"
-      },
-      {
-        "id": "d5fc2d90-0d88-4e4d-b86b-7d99dc783f78",
-        "name": "Nane",
-        "category": "Markt (Müsetand)",
-        "notes": "1 ",
-        "status": "completed"
-      },
-      {
-        "id": "03a450d6-8a5d-495a-a6c9-9ffa42cbbb4b",
-        "name": "Rauchmaten",
-        "category": "Markt (Müsetand)",
-        "notes": "6 ",
-        "status": "completed"
-      },
-      {
-        "id": "50dc1633-5a76-433e-b1d8-09405f1ef413",
-        "name": "Rella",
-        "category": "We (Käse)",
-        "notes": "2 ",
-        "status": "completed"
-      },
-      {
-        "id": "e2a6069a-98c3-450a-9281-abda11abecd1",
-        "name": "Risches Silikum",
-        "category": "",
-        "notes": "",
-        "status": "completed"
-      },
-      {
-        "id": "ccf13199-53fe-409c-9820-033fb4956e85",
-        "name": "Wiebels",
-        "category": "Markt (Toffeltand)",
-        "notes": "1 ",
-        "status": "completed"
-      },
-      {
-        "id": "24be81b4-71f3-457a-89bd-54bd70489be8",
-        "name": "Gelbe Rika",
-        "category": "Markt (Müsetand)",
-        "notes": "1 ",
-        "status": "completed"
-      },
-      {
-        "id": "01193231-a57f-40fd-a497-cc91d38c2be5",
-        "name": "Rüne Rika",
-        "category": "Markt (Müsetand)",
-        "notes": "1 ",
-        "status": "completed"
-      },
-      {
-        "id": "3d1020f2-55b1-4284-bfee-83083f37e1ca",
-        "name": "Firsichs oder Tarinen",
-        "category": "Markt (Müsetand)",
-        "notes": "2 ",
-        "status": "completed"
-      }
-    ],
+    "items": [],
     "showCompletedItems": false
   },
   "menu": {
@@ -328,6 +108,7 @@
             }
           }
         ],
+        "recipe": "https://www.chefkoch.de/rezepte/2681161420709282/Avocadosalat-mit-Feta-und-Pinienkernen.html",
         "standardAmount": 2,
         "id": "9ee24623-eed0-4a56-a0c0-e936a641eb8b",
         "completed": true
@@ -400,6 +181,7 @@
             }
           }
         ],
+        "recipe": "",
         "standardAmount": 1,
         "id": "b994bd06-aa80-4da7-902d-2519c593d144",
         "completed": true
@@ -451,6 +233,7 @@
             }
           }
         ],
+        "recipe": "",
         "standardAmount": 2,
         "id": "bcfed53a-6e19-4e90-9646-0116388a341c",
         "completed": true
@@ -573,6 +356,7 @@
             }
           }
         ],
+        "recipe": "https://www.madamecuisine.de/rote-bete-risotto/",
         "standardAmount": 2,
         "id": "d8e84bee-880f-4782-a443-a42244dd70ce",
         "completed": true
@@ -674,6 +458,7 @@
             }
           }
         ],
+        "recipe": "https://www.chefkoch.de/rezepte/1485961253786001/Pilzrisotto.html",
         "standardAmount": 2,
         "id": "44f4ed22-53fd-4b9a-9a13-ec5ef792bec0",
         "completed": true
@@ -704,6 +489,7 @@
             }
           }
         ],
+        "recipe": "",
         "standardAmount": 2,
         "subdishes": [
           {
@@ -763,6 +549,7 @@
             }
           }
         ],
+        "recipe": "https://www.chefkoch.de/rezepte/642141165243156/Brokkolisuppe.html",
         "standardAmount": 2,
         "id": "e3991fa3-b3d4-47c4-a20e-2684f6aa0ba0",
         "completed": true
@@ -864,6 +651,7 @@
             }
           }
         ],
+        "recipe": "https://www.chefkoch.de/rezepte/792971182782152/Champignonsuppe.html",
         "standardAmount": 2,
         "id": "6e0c2d1e-d89f-4f02-9db6-12026ad33a29",
         "completed": true
@@ -957,6 +745,7 @@
             }
           }
         ],
+        "recipe": "https://www.chefkoch.de/rezepte/1373751242290581/Frische-Tomatensuppe.html",
         "standardAmount": 2,
         "id": "f10571ea-eafe-4504-8f44-48634f5d4c9e",
         "completed": true
@@ -1031,6 +820,7 @@
             }
           }
         ],
+        "recipe": "https://www.chefkoch.de/rezepte/2233691357770062/Kuerbis-Karotten-Kokos-Ingwer-Suppe.html",
         "standardAmount": 2,
         "id": "0bc6031d-f6c8-4262-befc-b40a16b4ff63",
         "completed": true
@@ -1110,6 +900,7 @@
             }
           }
         ],
+        "recipe": "https://www.chefkoch.de/rezepte/1542941260689930/Einfache-Paprikasuppe.html",
         "standardAmount": 2,
         "id": "a0098923-6239-4279-90fc-a964199c1f49",
         "completed": true
@@ -1211,6 +1002,7 @@
             }
           }
         ],
+        "recipe": "",
         "standardAmount": 2,
         "id": "c6587ca9-5e7b-4ea6-932b-1373754756a7",
         "completed": true
@@ -1297,6 +1089,7 @@
             }
           }
         ],
+        "recipe": "",
         "standardAmount": 2,
         "id": "7006f0f8-0114-4ad0-9637-10e782d236d3",
         "completed": true
@@ -1390,12 +1183,13 @@
             }
           }
         ],
+        "recipe": "",
         "standardAmount": 2,
         "id": "d3f24119-0c95-4b5d-8ede-4e97cc9084bc",
         "completed": true
       },
       {
-        "title": "Bohnenlat",
+        "title": "Nenlat",
         "category": "Lat",
         "categories": [
           "Leines",
@@ -1462,6 +1256,7 @@
             }
           }
         ],
+        "recipe": "",
         "standardAmount": 2,
         "id": "d46ed6ef-42cd-4207-8b3f-b81c1c7323a4",
         "completed": true
@@ -1527,6 +1322,7 @@
             }
           }
         ],
+        "recipe": "",
         "standardAmount": 2,
         "id": "f255dd5f-06ad-4606-aa6a-725725a314d6",
         "completed": true
@@ -1635,6 +1431,7 @@
             }
           }
         ],
+        "recipe": "https://www.chefkoch.de/rezepte/351681120497520/Kuerbis-Risotto.html",
         "standardAmount": 2,
         "id": "9f756e21-d245-487f-9bcd-f86c9fc0ac65",
         "completed": true
@@ -1713,6 +1510,7 @@
             }
           }
         ],
+        "recipe": "",
         "standardAmount": 2,
         "id": "2170204a-6128-404a-8f1b-56e45ff8d341",
         "completed": true
@@ -1798,6 +1596,7 @@
             }
           }
         ],
+        "recipe": "https://www.chefkoch.de/rezepte/323031114329582/Gurkensalat.html",
         "standardAmount": 2,
         "id": "3a626b70-6e30-4ebe-af6a-0c865b98edab",
         "completed": true
@@ -1897,6 +1696,7 @@
             }
           }
         ],
+        "recipe": "https://www.chefkoch.de/rezepte/2520611395237922/Rote-Bete-Apfel-Salat-mit-Ziegenkaese-Crostini.html",
         "standardAmount": 2,
         "id": "0921592e-a3a3-41bb-91fd-1a6a42337dc1",
         "completed": true
@@ -1975,6 +1775,7 @@
             }
           }
         ],
+        "recipe": "https://www.chefkoch.de/rezepte/2600301408545066/Gebackener-Camembert-an-Honig-Senf-Sauce-mit-Rucola-Tomaten-Salat.html",
         "standardAmount": 2,
         "id": "059ad6b2-a46c-45f6-a2e5-25c9ad2ecbde",
         "completed": true
@@ -2060,6 +1861,7 @@
             }
           }
         ],
+        "recipe": "https://www.chefkoch.de/rezepte/2207741353787217/Paprika-Pfirsich-Salat.html",
         "standardAmount": 2,
         "id": "9d547c93-24ac-421c-9441-d5e720584047",
         "completed": true
@@ -2153,6 +1955,7 @@
             "optional": true
           }
         ],
+        "recipe": "https://www.chefkoch.de/rezepte/490721143302274/Basilikum-Rucolasalat-mit-Erdbeeren.html",
         "standardAmount": 2,
         "id": "53101ea0-c84b-4f0e-a4ff-66eb13056813",
         "completed": true
@@ -2280,6 +2083,7 @@
             }
           }
         ],
+        "recipe": "https://www.lecker.de/gebackener-honigziegenkaese-auf-salat-32552.html",
         "standardAmount": 2,
         "id": "5ce3d07a-bb88-47c8-94e4-190ddc1dda7e",
         "completed": true
@@ -2372,6 +2176,7 @@
             }
           }
         ],
+        "recipe": "https://www.chefkoch.de/rezepte/1151481221398359/Tomaten-Mozzarella-Risotto.html",
         "standardAmount": 2,
         "id": "6bab0918-49b2-42a7-bee5-8a1cb8d78bba",
         "completed": true
@@ -2485,6 +2290,7 @@
             }
           }
         ],
+        "recipe": "https://www.chefkoch.de/rezepte/2725361425059942/Gebackene-Suesskartoffeln-mit-Avocado-Paprika-Creme.html",
         "standardAmount": 2,
         "id": "ea318c6d-24ce-4f62-9a7d-29824698da38",
         "completed": true
@@ -2577,6 +2383,7 @@
             }
           }
         ],
+        "recipe": "https://www.chefkoch.de/rezepte/1338411238665362/Cremige-Kaesespaetzle-mit-Roestzwiebeln.html",
         "standardAmount": 2,
         "id": "d8b0c7d2-7e89-4a48-83df-c9f5e23a242c",
         "completed": true
@@ -2664,6 +2471,7 @@
             "optional": true
           }
         ],
+        "recipe": "",
         "standardAmount": 2,
         "id": "47db8e15-707b-4e91-9d76-d0ee20de39e0",
         "completed": true
@@ -2749,6 +2557,7 @@
             }
           }
         ],
+        "recipe": "https://www.chefkoch.de/rezepte/2445071385311516/Reis-Hackfleisch-Pfanne-mit-Paprika.html",
         "standardAmount": 2,
         "id": "f5207177-fefe-4980-85e3-746d04edeef1",
         "completed": true
@@ -2877,6 +2686,7 @@
             }
           }
         ],
+        "recipe": "",
         "standardAmount": 2,
         "subdishes": [
           {
@@ -2931,6 +2741,7 @@
             }
           }
         ],
+        "recipe": "",
         "standardAmount": 1,
         "id": "fd2f3306-35cd-461a-85e9-f33e93487b59",
         "completed": true
@@ -2979,6 +2790,7 @@
             "optional": true
           }
         ],
+        "recipe": "",
         "standardAmount": 2,
         "subdishes": [
           {
@@ -3065,6 +2877,7 @@
             }
           }
         ],
+        "recipe": "",
         "standardAmount": 2,
         "id": "d1b0b5af-5ad1-45c9-95cd-3688c6fd9ce3",
         "completed": true
@@ -3079,6 +2892,7 @@
           "Kochen"
         ],
         "ingredients": [],
+        "recipe": "",
         "standardAmount": 2,
         "id": "b3d2d6db-ee67-4eba-a95d-d188c108b071",
         "completed": false
@@ -3114,6 +2928,7 @@
             }
           }
         ],
+        "recipe": "",
         "standardAmount": 1,
         "id": "4a9fcc56-5146-4319-99de-376778c62446",
         "completed": true
@@ -3249,6 +3064,7 @@
             }
           }
         ],
+        "recipe": "https://www.chefkoch.de/rezepte/745721177147257/Lasagne.html",
         "standardAmount": 2,
         "id": "6f9e152b-9b93-4cd6-98bf-c988ba3bead0",
         "completed": true
@@ -3293,6 +3109,7 @@
             "optional": true
           }
         ],
+        "recipe": "",
         "standardAmount": 1,
         "id": "1863d7d0-0cc7-433a-bc21-5a780c306dfb",
         "completed": true
@@ -3314,6 +3131,7 @@
             }
           }
         ],
+        "recipe": "",
         "standardAmount": 1,
         "id": "e0b02e8a-df61-4d67-bd6b-29046e2acc80",
         "completed": true
@@ -3407,6 +3225,7 @@
             "optional": true
           }
         ],
+        "recipe": "",
         "standardAmount": 4,
         "id": "cbe06bde-0302-4f4d-80f9-f33741b41928",
         "completed": true
@@ -3439,6 +3258,7 @@
             "optional": true
           }
         ],
+        "recipe": "",
         "standardAmount": 2,
         "id": "39a872e2-5ef8-46e9-adaa-afaed493074c",
         "completed": true
@@ -3500,6 +3320,7 @@
             "optional": true
           }
         ],
+        "recipe": "",
         "standardAmount": 2,
         "id": "85b621b7-e3e8-4612-a01b-f154fcd8133d",
         "completed": true
@@ -3532,6 +3353,7 @@
             "optional": true
           }
         ],
+        "recipe": "",
         "standardAmount": 1,
         "id": "069ab703-c0a1-49f6-80d3-e53716a85923",
         "completed": true
@@ -3556,6 +3378,7 @@
             }
           }
         ],
+        "recipe": "",
         "standardAmount": 2,
         "id": "e0f1eea7-5d26-43b3-ab68-29a215d659cf",
         "completed": true
@@ -3594,6 +3417,7 @@
             }
           }
         ],
+        "recipe": "",
         "standardAmount": 2,
         "id": "8e925bc9-4990-4b8d-b1c6-fd2ba864cb47",
         "completed": true
@@ -3667,6 +3491,7 @@
             }
           }
         ],
+        "recipe": "https://www.chefkoch.de/rezepte/837601188560864/Kartoffelgratin.html",
         "standardAmount": 2,
         "id": "86740804-8d55-48ec-b94e-893ee03a4003",
         "completed": true
@@ -3754,6 +3579,7 @@
             }
           }
         ],
+        "recipe": "https://eatsmarter.de/rezepte/gebackene-rosmarin-kartoffeln",
         "standardAmount": 2,
         "id": "228b4b31-8d52-4df5-9a4c-df897c5108dc",
         "completed": true
@@ -3853,8 +3679,24 @@
               "value": null,
               "unit": null
             }
+          },
+          {
+            "name": "Hüttenkäse",
+            "amount": {
+              "value": "250",
+              "unit": "g"
+            },
+            "optional": false
+          },
+          {
+            "name": "Pilzs",
+            "amount": {
+              "value": "250",
+              "unit": "g"
+            }
           }
         ],
+        "recipe": "https://www.chefkoch.de/rezepte/868211192257323/Mediterranes-Ofengemuese-mit-Halloumi.html",
         "standardAmount": 2,
         "id": "b9b6a618-4520-424a-9764-95e0410f5bbe",
         "completed": true
@@ -3928,6 +3770,7 @@
             }
           }
         ],
+        "recipe": "https://www.chefkoch.de/rezepte/1225451227794455/Kartoffel-Gurkensalat-nach-Oma-Luise.html",
         "standardAmount": 2,
         "id": "bc815c3d-8e24-4746-a93c-21c0d33fb82b",
         "completed": true
@@ -4023,6 +3866,7 @@
             "optional": true
           }
         ],
+        "recipe": "https://cinnamonandcoriander.com/de/pasta-al-limone/",
         "standardAmount": 2,
         "id": "53eeb2d9-543c-42c1-8554-2ae539eae22e",
         "completed": true
@@ -4124,6 +3968,7 @@
             }
           }
         ],
+        "recipe": "https://www.chefkoch.de/rezepte/914801196859108/Fusilli-mit-Auberginen-und-Mozzarella.html",
         "standardAmount": 2,
         "id": "49076420-e4b9-4b14-aa66-f142007114b6",
         "completed": true
@@ -4162,6 +4007,7 @@
             }
           }
         ],
+        "recipe": "",
         "standardAmount": 2,
         "id": "b79c4615-e20a-4918-b1dd-c9c799b1485a",
         "completed": true
@@ -4221,6 +4067,7 @@
             }
           }
         ],
+        "recipe": "",
         "standardAmount": 2,
         "id": "4477daf8-257a-401e-9701-11ea7af62fae",
         "completed": true
@@ -4371,6 +4218,7 @@
             }
           }
         ],
+        "recipe": "",
         "standardAmount": 2,
         "id": "bf02684c-96f9-4d88-aa7e-410a693e61fa",
         "completed": true
@@ -4383,7 +4231,7 @@
           {
             "name": "Dels",
             "amount": {
-              "value": 250,
+              "value": 200,
               "unit": "g"
             }
           },
@@ -4425,14 +4273,14 @@
           {
             "name": "Tückige Maten",
             "amount": {
-              "value": 200,
+              "value": 150,
               "unit": "g"
             }
           },
           {
             "name": "Sahne",
             "amount": {
-              "value": 150,
+              "value": 125,
               "unit": "ml"
             }
           },
@@ -4467,7 +4315,7 @@
           {
             "name": "Reukäse",
             "amount": {
-              "value": 100,
+              "value": 75,
               "unit": "g"
             }
           },
@@ -4479,6 +4327,7 @@
             }
           }
         ],
+        "recipe": "https://www.slowlyveggie.de/rezepte/vegetarischer-nudelauflauf-einfach-schnell",
         "standardAmount": 2,
         "id": "5cfa9028-82c7-4747-a994-1d6385896ef7",
         "completed": true
@@ -4496,6 +4345,7 @@
             }
           }
         ],
+        "recipe": "https://www.lecker.de/penne-birnen-gorgonzola-sahne-69751.html",
         "standardAmount": 2,
         "id": "aca15100-d01e-4543-946b-bf1f968397c9",
         "completed": false
@@ -4592,6 +4442,7 @@
             "optional": true
           }
         ],
+        "recipe": "https://www.madamecuisine.de/penne-all-arrabbiata/",
         "standardAmount": 2,
         "id": "b21b7ef8-eaae-4dc9-bdc4-77554a863711",
         "completed": true
@@ -4701,6 +4552,7 @@
             }
           }
         ],
+        "recipe": "https://www.madamecuisine.de/pasta-al-pomodoro/",
         "standardAmount": 2,
         "id": "76a7dc9f-3511-435b-b1e4-8f4ff0a910fa",
         "completed": true
@@ -4725,6 +4577,7 @@
             }
           }
         ],
+        "recipe": "",
         "standardAmount": 2,
         "id": "f27af653-b0d6-4dab-b727-7625c292fc7a",
         "completed": true
@@ -4742,6 +4595,7 @@
             }
           }
         ],
+        "recipe": "https://www.chefkoch.de/rezepte/2114131340630587/Vegetarische-Spinat-Gemuese-Lasagne-mit-Tomatensosse.html",
         "standardAmount": 2,
         "id": "4f9055ed-a385-480d-a636-9c7ee7cd454a",
         "completed": false
@@ -4759,6 +4613,7 @@
             }
           }
         ],
+        "recipe": "https://www.chefkoch.de/rezepte/1231241228164594/Hildes-Fleischkuechle.html",
         "standardAmount": 2,
         "id": "03f5b3f1-3bce-44fe-85f1-b33a715154c1",
         "completed": false
@@ -4776,6 +4631,7 @@
             }
           }
         ],
+        "recipe": "https://www.chefkoch.de/rezepte/1616691268862802/Zucchini-Lasagne.html",
         "standardAmount": 2,
         "id": "a7a53539-91e3-417b-a6bc-5ea9f882140c",
         "completed": false
@@ -4793,6 +4649,7 @@
             }
           }
         ],
+        "recipe": "",
         "standardAmount": 2,
         "id": "26981c00-db7c-4f67-8f7e-1f5781c283c3",
         "completed": false
@@ -4810,6 +4667,7 @@
             }
           }
         ],
+        "recipe": "",
         "standardAmount": 2,
         "id": "c38c172c-573d-47f8-8091-f92b63df3a37",
         "completed": false
@@ -4827,6 +4685,7 @@
             }
           }
         ],
+        "recipe": "https://www.chefkoch.de/rezepte/1647731272435749/Gefuellte-Zucchini-mit-Hackfleisch-und-Kaese.html",
         "standardAmount": 2,
         "id": "9730b2a4-ea31-4755-bf57-a3d5f746423c",
         "completed": false
@@ -4844,6 +4703,7 @@
             }
           }
         ],
+        "recipe": "https://www.chefkoch.de/rezepte/226491093168336/Gefuellte-Paprika-nach-Uroma-Susanne.html",
         "standardAmount": 2,
         "id": "84d313c0-1227-4992-acf5-e01f6642c9a1",
         "completed": false
@@ -4861,6 +4721,7 @@
             }
           }
         ],
+        "recipe": "https://www.chefkoch.de/rezepte/1031841208350942/Kaiserschmarrn-Tiroler-Landgasthofrezept.html",
         "standardAmount": 2,
         "id": "2294ffc7-774e-4116-9eac-0c26eb9d6328",
         "completed": false
@@ -4878,6 +4739,7 @@
             }
           }
         ],
+        "recipe": "https://www.chefkoch.de/rezepte/2529831396465550/Pfannkuchen-Crepe-und-Pancake.html",
         "standardAmount": 2,
         "id": "41c50414-29bd-447e-965a-2b92fb82781b",
         "completed": false
@@ -4895,6 +4757,7 @@
             }
           }
         ],
+        "recipe": "",
         "standardAmount": 2,
         "id": "1d834b16-e230-416a-af66-3a0721e5b58c",
         "completed": false
@@ -4912,6 +4775,7 @@
             }
           }
         ],
+        "recipe": "https://www.chefkoch.de/rezepte/1540431260282175/Joghurt-Bombe.html",
         "standardAmount": 2,
         "id": "85e5ac82-67b8-4103-bb1f-291f734d0982",
         "completed": false
@@ -4929,6 +4793,7 @@
             }
           }
         ],
+        "recipe": "",
         "standardAmount": 2,
         "id": "c5671609-c885-4912-9942-e1859cc85e93",
         "completed": false
@@ -4982,6 +4847,7 @@
             "optional": true
           }
         ],
+        "recipe": "",
         "standardAmount": 2,
         "id": "d3dd43dd-c108-4be5-a9d1-6d8346045eb4",
         "completed": false
@@ -5034,6 +4900,7 @@
             }
           }
         ],
+        "recipe": "",
         "standardAmount": 2,
         "id": "065673da-a890-4273-a754-32f2c57277a5",
         "completed": true
@@ -5051,6 +4918,7 @@
             }
           }
         ],
+        "recipe": "https://www.chefkoch.de/rezepte/662351168076093/Geheimes-Waffelrezept.html",
         "standardAmount": 2,
         "id": "d20c225a-72a8-40a6-b611-ed05bb9dbd40",
         "completed": false
@@ -5068,6 +4936,7 @@
             }
           }
         ],
+        "recipe": "https://aboutfuel.de/rezept-sandwich-mit-zitronenricotta-und-gegrillter-paprika/",
         "standardAmount": 2,
         "id": "1fa28e1c-2f65-44a8-a312-837632e7a6f0",
         "completed": false
@@ -5085,6 +4954,7 @@
             }
           }
         ],
+        "recipe": "",
         "standardAmount": 2,
         "id": "d4a51688-4c2e-4d35-b7d6-60dce355ef07",
         "completed": false
@@ -5102,6 +4972,7 @@
             }
           }
         ],
+        "recipe": "",
         "standardAmount": 2,
         "id": "715ab26e-f5cb-4512-975f-b4064c95c116",
         "completed": false
@@ -5119,6 +4990,7 @@
             }
           }
         ],
+        "recipe": "",
         "standardAmount": 2,
         "id": "ee6eea1d-d265-4133-8367-74252809c01c",
         "completed": false
@@ -5136,6 +5008,7 @@
             }
           }
         ],
+        "recipe": "",
         "standardAmount": 2,
         "id": "28e93ca0-f443-4d33-8e40-580c1aade210",
         "completed": false
@@ -5153,6 +5026,7 @@
             }
           }
         ],
+        "recipe": "",
         "standardAmount": 2,
         "id": "0ccceeb5-f503-4b15-b36a-31d6315447c9",
         "completed": false
@@ -5170,6 +5044,7 @@
             }
           }
         ],
+        "recipe": "https://www.chefkoch.de/rezepte/876081193044684/1a-Guacamole-Dip.html",
         "standardAmount": 2,
         "id": "b5364bd2-f503-41e9-a1d2-1db3c7c2fd00",
         "completed": false
@@ -5187,6 +5062,7 @@
             }
           }
         ],
+        "recipe": "",
         "standardAmount": 2,
         "id": "73a3bb1e-dc41-4bc2-ad1b-3fae2c1a8159",
         "completed": false
@@ -5204,6 +5080,7 @@
             }
           }
         ],
+        "recipe": "",
         "standardAmount": 2,
         "id": "a27ae6cb-e46a-4609-b09b-59a592c6f0a3",
         "completed": false
@@ -5221,6 +5098,7 @@
             }
           }
         ],
+        "recipe": "https://www.lecker.de/mangold-moehren-roesti-mit-frischkaese-tomaten-dip-4969.html",
         "standardAmount": 2,
         "id": "c0c6a0f1-ab80-4f0a-9113-dc9255b997f8",
         "completed": false
@@ -5238,6 +5116,7 @@
             }
           }
         ],
+        "recipe": "https://www.chefkoch.de/rezepte/545381152023279/Parmigiana-di-Melanzane.html",
         "standardAmount": 2,
         "id": "6d038ae1-f0b1-48d7-b524-123c9bfa4ace",
         "completed": false
@@ -5255,6 +5134,7 @@
             }
           }
         ],
+        "recipe": "https://www.chefkoch.de/rezepte/1639971271583788/Ratatouille.html",
         "standardAmount": 2,
         "id": "94ee774b-c869-4413-a10a-1c49a5778336",
         "completed": false
@@ -5272,6 +5152,7 @@
             }
           }
         ],
+        "recipe": "",
         "standardAmount": 2,
         "id": "e1ca889a-0174-4978-bd1a-5de23e7d2e26",
         "completed": false
@@ -5289,6 +5170,7 @@
             }
           }
         ],
+        "recipe": "https://eatsmarter.de/rezepte/zucchini-puffer",
         "standardAmount": 2,
         "id": "3acc688d-26ca-47ff-aa1f-2965cdbcba65",
         "completed": false
@@ -5306,23 +5188,102 @@
             }
           }
         ],
+        "recipe": "https://eatsmarter.de/rezepte/bunter-tomatensalat-auf-koernigem-frischkaese-2",
         "standardAmount": 2,
         "id": "2cf592f9-8c26-47d7-a624-9ece57ff4b4d",
         "completed": false
       },
       {
-        "title": "",
-        "category": "",
+        "title": "Fifferlingsotto",
+        "category": "Reis",
         "categories": [],
         "ingredients": [
           {
-            "name": "",
+            "name": "Fifferlings",
+            "amount": {
+              "value": 175,
+              "unit": "g"
+            }
+          },
+          {
+            "name": "Wiebels",
+            "amount": {
+              "value": 0.5,
+              "unit": ""
+            }
+          },
+          {
+            "name": "Tailmaten",
+            "amount": {
+              "value": 100,
+              "unit": "g"
+            }
+          },
+          {
+            "name": "Nittlauch",
+            "amount": {
+              "value": 0.5,
+              "unit": "Bunds"
+            }
+          },
+          {
+            "name": "Butter",
+            "amount": {
+              "value": 0.5,
+              "unit": "EL"
+            }
+          },
+          {
+            "name": "Sottoreis",
+            "amount": {
+              "value": 150,
+              "unit": "g"
+            }
+          },
+          {
+            "name": "Weißwein",
+            "amount": {
+              "value": 75,
+              "unit": "ml"
+            }
+          },
+          {
+            "name": "Müserühe",
+            "amount": {
+              "value": 400,
+              "unit": "ml"
+            }
+          },
+          {
+            "name": "Öl",
+            "amount": {
+              "value": 0.5,
+              "unit": "EL"
+            }
+          },
+          {
+            "name": "Mesan",
+            "amount": {
+              "value": 50,
+              "unit": "g"
+            }
+          },
+          {
+            "name": "Salz",
+            "amount": {
+              "value": null,
+              "unit": null
+            }
+          },
+          {
+            "name": "Feffer",
             "amount": {
               "value": null,
               "unit": null
             }
           }
         ],
+        "recipe": "",
         "standardAmount": 2,
         "id": "fa554a03-ad59-4448-bbb7-e22b19318bf6",
         "completed": false
@@ -5340,6 +5301,7 @@
             }
           }
         ],
+        "recipe": "",
         "standardAmount": 2,
         "id": "ed1556e8-e753-4f1e-94ad-b755fdcbdb04",
         "completed": false
@@ -5357,6 +5319,7 @@
             }
           }
         ],
+        "recipe": "",
         "standardAmount": 2,
         "id": "6db039d4-ed4d-4b27-9f37-be94ff45ce2d",
         "completed": false
@@ -5374,6 +5337,7 @@
             }
           }
         ],
+        "recipe": "",
         "standardAmount": 2,
         "id": "837c9b01-827e-4cef-99bd-47a75f0b0104",
         "completed": false
@@ -5391,6 +5355,7 @@
             }
           }
         ],
+        "recipe": "",
         "standardAmount": 2,
         "id": "012f9ea6-6a2b-4c1a-834a-176dacb9a196",
         "completed": false
@@ -5399,7 +5364,7 @@
     "ingredients": [
       {
         "name": "Bis",
-        "vendor": "We"
+        "vendor": "We (Obst & Müse)"
       },
       {
         "name": "Blauch",
@@ -5415,15 +5380,19 @@
       },
       {
         "name": "Cado",
-        "vendor": "We"
+        "vendor": "We (Obst & Müse)"
       },
       {
         "name": "Camembert",
         "vendor": "We (Käse)"
       },
       {
+        "name": "Cchini",
+        "vendor": "We (Obst & Müse)"
+      },
+      {
         "name": "Ccoli",
-        "vendor": "We"
+        "vendor": "We (Obst & Müse)"
       },
       {
         "name": "Ccolitinpäckchen",
@@ -5506,12 +5475,16 @@
         "vendor": "Markt (Müsetand)"
       },
       {
+        "name": "Hüttenkäse",
+        "vendor": "We (Käse)"
+      },
+      {
         "name": "Kaonibs",
         "vendor": "Natura"
       },
       {
         "name": "Käse",
-        "vendor": "Markt (Metzger)"
+        "vendor": "Markt (Käse)"
       },
       {
         "name": "Ke",
@@ -5572,6 +5545,10 @@
       {
         "name": "Livenöl",
         "vendor": "Online"
+      },
+      {
+        "name": "Lloumi",
+        "vendor": "We (Käse)"
       },
       {
         "name": "Maggi",
@@ -5758,6 +5735,10 @@
         "vendor": "Markt (Müsetand)"
       },
       {
+        "name": "Rote Rika",
+        "vendor": "We (Obst & Müse)"
+      },
+      {
         "name": "Rote Wiebels",
         "vendor": "Markt (Toffeltand)"
       },
@@ -5875,6 +5856,10 @@
       },
       {
         "name": "Tronensaft",
+        "vendor": "We"
+      },
+      {
+        "name": "Tückige Maten",
         "vendor": "We"
       },
       {

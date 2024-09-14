@@ -53,17 +53,10 @@
 
       <q-separator inset spaced="xl" />
 
-      <q-item-label header>Test</q-item-label>
-      <q-item>
-        <q-item-section>
+      <q-expansion-item label="Advanced" switch-toggle-side>
           <q-btn @click="onClickSendNotification">Send notification</q-btn>
-        </q-item-section>
-      </q-item>
-      <q-item>
-        <q-item-section>
           <q-btn @click="onClickGetLocation">Get location</q-btn>
-        </q-item-section>
-      </q-item>
+      </q-expansion-item>
     </q-list>
   </q-page>
 </template>

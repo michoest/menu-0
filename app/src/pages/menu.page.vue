@@ -12,10 +12,10 @@
     <q-spinner-dots color="primary" size="xl" />
   </q-page>
 
-  <q-page v-else>
-    <q-list v-if="dishes.length > 0" class="q-pt-md">
+  <q-page v-else ref="dishList">
+    <q-list v-if="dishes.length > 0">
       <q-item class="flex justify-center">
-        <q-input v-model="search" standout rounded dense clearable placeholder="Mmmmhhhes Schompf"
+        <q-input v-model="search" ref="searchInput" standout rounded dense clearable placeholder="Mmmmhhhes Schompf"
           style="width: 60%; min-width: 300px;">
           <template v-slot:prepend>
             <q-icon name="search" />
@@ -50,8 +50,7 @@
                 dish.dish.id == subdish.dish).dish.title} (Menge: ${subdish.amountFactor})`).join(', ') }}
             </div>
             <div v-if="dish.dish.recipe" class="q-mt-md">
-              <span class="text-bold">Recipe:</span> <q-btn type="a" :href="dish.dish.recipe" target="_blank"
-                :label="dish.dish.title" />
+              <span class="text-bold">Zept:</span> <a :href="dish.dish.recipe" target="_blank">{{ dish.dish.title }}</a>
             </div>
           </q-item-section>
           <q-item-section side>
@@ -94,6 +93,8 @@ const editDishDialog = ref({ show: false, dish: {} });
 const store = useStore();
 
 const dishes = ref([]);
+const searchInput = ref(null);
+const dishList = ref(null);
 
 const onClickIncrementDish = function (dish) {
   dish.amount = (dish.amount == 0) ? dish.dish.standardAmount : dish.amount + 1;
@@ -171,4 +172,14 @@ const ingredientToString = (ingredient) => {
 
   return result;
 };
+
+const onClickTab = () => {
+  if (window.scrollY > 0) {
+    window.scrollTo({ top: 0, behavior: 'smooth' });
+  } else {
+    searchInput.value.focus();
+  }
+};
+
+defineExpose({ onClickTab });
 </script>

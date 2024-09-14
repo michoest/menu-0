@@ -114,4 +114,9 @@ const onClickSave = async () => {
   }
 };
 
+const onClickTab = () => {
+
+};
+
+defineExpose({ onClickTab });
 </script>

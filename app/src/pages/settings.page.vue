@@ -135,4 +135,10 @@ const onClickGetLocation = () => {
     });
   }
 };
+
+const onClickTab = () => {
+
+};
+
+defineExpose({ onClickTab });
 </script>

@@ -5713,6 +5713,96 @@
         "completed": false
       },
       {
+        "title": "Rezenzeit",
+        "category": "Rot",
+        "categories": [],
+        "ingredients": [
+          {
+            "name": "Rezen",
+            "amount": {
+              "value": 2,
+              "unit": ""
+            }
+          },
+          {
+            "name": "Lami",
+            "amount": {
+              "value": 50,
+              "unit": "g"
+            }
+          },
+          {
+            "name": "Schink",
+            "amount": {
+              "value": 50,
+              "unit": "g"
+            },
+            "optional": true
+          },
+          {
+            "name": "Fefferbeißs",
+            "amount": {
+              "value": 1,
+              "unit": ""
+            }
+          },
+          {
+            "name": "Tailmaten",
+            "amount": {
+              "value": 5,
+              "unit": ""
+            }
+          },
+          {
+            "name": "Ke",
+            "amount": {
+              "value": 5,
+              "unit": "Scheibs"
+            }
+          },
+          {
+            "name": "Rika",
+            "amount": {
+              "value": 0.5,
+              "unit": ""
+            }
+          },
+          {
+            "name": "Rischkäse",
+            "amount": {
+              "value": null,
+              "unit": null
+            }
+          },
+          {
+            "name": "Butter",
+            "amount": {
+              "value": null,
+              "unit": null
+            }
+          },
+          {
+            "name": "Dieschen",
+            "amount": {
+              "value": 3,
+              "unit": ""
+            }
+          },
+          {
+            "name": "Antipastis",
+            "amount": {
+              "value": null,
+              "unit": null
+            },
+            "optional": true
+          }
+        ],
+        "recipe": "",
+        "standardAmount": 2,
+        "id": "ed1556e8-e753-4f1e-94ad-b755fdcbdb04",
+        "completed": true
+      },
+      {
         "title": "",
         "category": "",
         "categories": [],

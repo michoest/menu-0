@@ -182,4 +182,10 @@ const onDragEnd = async (evt) => {
     $notify(`${item.name} moved to ${item.category}!`);
   }
 }
+
+const onClickTab = () => {
+  
+};
+
+defineExpose({ onClickTab });
 </script>

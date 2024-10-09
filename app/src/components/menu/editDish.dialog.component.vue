@@ -54,6 +54,11 @@
                 <q-item>
                   <q-input borderless v-model="dish.standardAmount" dense placeholder="Übliche Menge" autofocus @keyup.enter="onClickSave"/>
                 </q-item>
+
+                <q-item-label header>Rezept</q-item-label>
+                <q-item>
+                  <q-input borderless v-model="dish.recipe" dense placeholder="https://rezepte.de/rezept" @keyup.enter="onClickSave"/>
+                </q-item>
               </q-list>
           </q-card-section>
 
